@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>True Grade Metals — Verified superalloys, sourced from China, landed in Australia</title>
+<meta name="description" content="True Grade Metals sources nickel alloys and superalloys from China for Australian buyers. Every heat is verified by an accredited independent laboratory before it ships, and the report goes to you unedited.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=Azeret+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<!--
+THESIS: This surface is a chain-of-custody document, not a marketing page. It refuses the category's
+orange-lit factory hero and the SaaS three-card benefits row; the first viewport is the mechanism itself —
+a heat under examination, at full scale.
+OWN-WORLD: The metallurgical test certificate and the inspection docket. Light neutral desk ground, near-white
+sheet stock, hairline rules, pre-printed form blue, ruled tables, ruled field boxes, rubber stamps. Square
+corners only, no shadows as decoration, depth from layered paper. Archivo (expanded for display), Azeret Mono
+for every measured value. Pass-green and flag-amber appear only on real measurements.
+STORY: The visitor understands that TGM verifies the metal rather than the paperwork, believes it because the
+artifact is shown and the failed report is promised too, and acts by filing an RFQ that reads like gate one.
+FIRST VIEWPORT: Full-bleed desk ground; a docket sheet occupies the right two-fifths carrying a live PMI
+readout with spec min/max columns and a flagged Mo row; headline set into the sheet's title block at left;
+primary action as a solid ink block beneath it.
+FORM: Inspection docket. First on the ordered list. Direction pinned by the user, not rolled.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="nav__mark" href="/">
+    <span class="nav__mark-name">True Grade Metals</span>
+    <span class="nav__mark-sub">Verified alloy sourcing · Australia</span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#chain">Verification</a>
+    <a href="materials/index.html">Materials</a>
+    <a href="#engagement">Engagement</a>
+    <a href="#entity">About</a>
+  </nav>
+  <a class="btn btn--sm" href="#rfq">Request material</a>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO : THE DOCKET ============ -->
+<section class="hero">
+  <div class="hero__grid">
+
+    <div class="hero__lede">
+      <h1>Nothing ships until the metal proves it.</h1>
+      <p class="hero__body">
+        We source nickel alloys and superalloys from China for Australian buyers. Every heat is
+        verified by an accredited independent laboratory before it leaves the mill. The report
+        comes to you unedited, whether it passes or not.
+      </p>
+      <div class="hero__actions">
+        <a class="btn" href="#rfq">Request verified material</a>
+        <a class="btn btn--ghost" href="#chain">See how verification works</a>
+      </div>
+      <p class="hero__foot">
+        Backed by <b>Bilt&nbsp;&amp;&nbsp;Co</b>: an Australian company, an AUD invoice, and someone
+        who answers the phone in your timezone.
+      </p>
+    </div>
+
+    <!-- The evidence artifact -->
+    <div class="sheetstack">
+    <div class="sheetstack__under sheetstack__under--2" aria-hidden="true"></div>
+    <div class="sheetstack__under sheetstack__under--1" aria-hidden="true"></div>
+    <figure class="sheet" id="readout">
+      <figcaption class="sheet__flag">Specimen — illustrative, not a real test result</figcaption>
+
+      <div class="sheet__head">
+        <div>
+          <p class="sheet__no">Docket TGM–PSI–0000</p>
+          <p class="sheet__title">Positive Material Identification</p>
+          <p class="sheet__sub">Delivered heat · verified against certificate</p>
+        </div>
+        <img class="stamp" data-stamp src="assets/stamp-pass.svg"
+             alt="Stamped: pass, verified" width="240" height="108">
+      </div>
+
+      <dl class="sheet__meta">
+        <div><dt>Alloy</dt><dd>Hastelloy C-276</dd></div>
+        <div><dt>UNS</dt><dd>N10276</dd></div>
+        <div><dt>Standard</dt><dd>ASTM B575</dd></div>
+        <div><dt>Heat</dt><dd>2H-4471-C</dd></div>
+      </dl>
+
+      <table class="assay">
+        <caption class="vh">Measured chemical composition against specification limits</caption>
+        <thead>
+          <tr><th scope="col">Element</th><th scope="col">Min</th><th scope="col">Max</th><th scope="col">Measured</th><th scope="col"><span class="vh">Result</span></th></tr>
+        </thead>
+        <tbody>
+          <tr data-row><th scope="row">Ni</th><td>—</td><td>bal</td><td class="num" data-val="57.12">—</td><td class="res"></td></tr>
+          <tr data-row><th scope="row">Mo</th><td>15.00</td><td>17.00</td><td class="num" data-val="15.84">—</td><td class="res"></td></tr>
+          <tr data-row><th scope="row">Cr</th><td>14.50</td><td>16.50</td><td class="num" data-val="15.61">—</td><td class="res"></td></tr>
+          <tr data-row><th scope="row">W</th><td>3.00</td><td>4.50</td><td class="num" data-val="3.42">—</td><td class="res"></td></tr>
+          <tr data-row><th scope="row">Fe</th><td>4.00</td><td>7.00</td><td class="num" data-val="5.90">—</td><td class="res"></td></tr>
+          <tr data-row><th scope="row">C</th><td>—</td><td>0.010</td><td class="num" data-val="0.006">—</td><td class="res"></td></tr>
+        </tbody>
+      </table>
+
+      <p class="sheet__note">
+        Molybdenum is the substitution tell on C-276. It is measured on the delivered heat,
+        not read off the certificate.
+      </p>
+    </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ THE PROBLEM : THE BLANK FORM ============ -->
+<section class="problem" id="problem">
+  <div class="wrap">
+    <h2>Five questions you can’t answer from Brisbane.</h2>
+    <p class="lede">
+      Buying superalloy direct from China can take a serious slice out of your material cost. It also hands you a set of
+      unknowns that no amount of email can close, which is why most Australian buyers who could
+      do it, don’t.
+    </p>
+
+    <ol class="qform">
+      <li><span class="qform__q">Is this mill real?</span><span class="qform__blank" aria-hidden="true"></span></li>
+      <li><span class="qform__q">Is the grade real?</span><span class="qform__blank" aria-hidden="true"></span></li>
+      <li><span class="qform__q">Is the mill test certificate real?</span><span class="qform__blank" aria-hidden="true"></span></li>
+      <li><span class="qform__q">Will it actually ship?</span><span class="qform__blank" aria-hidden="true"></span></li>
+      <li class="qform__key"><span class="qform__q">And when it’s wrong, who do I call?</span><span class="qform__blank" aria-hidden="true"></span></li>
+    </ol>
+
+    <p class="problem__turn">
+      The last one has no workaround. Every other question has a hack: a reference, a sample,
+      a smaller first order. That one is just exposure, and it is the reason the container never
+      gets booked. <b>We answer it by being the party you call.</b>
+    </p>
+  </div>
+</section>
+
+<!-- ============ THE VERIFICATION CHAIN : DARK PUNCTUATION ============ -->
+<section class="chain" id="chain">
+  <div class="wrap">
+    <header class="chain__head">
+      <h2>The verification chain</h2>
+      <p>Five gates. Material does not advance until the gate behind it is closed.</p>
+    </header>
+
+    <ol class="gates">
+      <li class="gate" data-gate>
+        <div class="gate__no">Gate 01</div>
+        <div class="gate__body">
+          <h3>Mill qualification</h3>
+          <p>No mill quotes your job until it has been audited on site and approved: business and
+             export licences verified, credit checked, the floor walked. We do not source against a
+             marketplace listing.</p>
+          <p class="gate__answers">Answers: <em>Who am I actually buying from?</em></p>
+        </div>
+      </li>
+      <li class="gate" data-gate>
+        <div class="gate__no">Gate 02</div>
+        <div class="gate__body">
+          <h3>Specification lock</h3>
+          <p>Grade, standard, dimensional tolerance and the full test regime are fixed in writing
+             before a purchase order exists. The standard defines the tests, and we specify to it, so
+             nothing is left to interpretation later.</p>
+          <p class="gate__answers">Answers: <em>What exactly did I order?</em></p>
+        </div>
+      </li>
+      <li class="gate" data-gate>
+        <div class="gate__no">Gate 03</div>
+        <div class="gate__body">
+          <h3>Production surveillance</h3>
+          <p>Presence during the run, not a phone call at the end. Progress, heat numbers and
+             photographs reach you while the material is still on the floor and still fixable.</p>
+          <p class="gate__answers">Answers: <em>Is it being made the way we agreed?</em></p>
+        </div>
+      </li>
+      <li class="gate gate--hero" data-gate>
+        <div class="gate__no">Gate 04</div>
+        <div class="gate__body">
+          <h3>Independent pre-shipment verification</h3>
+          <p>An accredited third-party laboratory tests the actual heat against the standard, and
+             positive material identification is run on the delivered material. We put a
+             representative on the floor at loading, with the authority to stop the container.</p>
+          <p><b>We don’t ask you to trust our inspection — we’re not the ones inspecting.</b> The lab
+             has no stake in whether your shipment moves, which is exactly why its report is worth
+             something. You receive it unedited, pass or fail.</p>
+          <p class="gate__answers">Answers: <em>Is it the grade it says it is?</em></p>
+        </div>
+      </li>
+      <li class="gate" data-gate>
+        <div class="gate__no">Gate 05</div>
+        <div class="gate__body">
+          <h3>Landed accountability</h3>
+          <p>Freight, customs and delivery to your yard. An Australian entity, an AUD invoice, local
+             recourse, and material replaced if it fails to meet what was specified.</p>
+          <p class="gate__answers">Answers: <em>Who do I call when it’s wrong?</em></p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ THE LINE ============ -->
+<section class="creed">
+  <div class="wrap">
+    <p class="creed__line">We test the metal,<br>not the paperwork.</p>
+    <p class="creed__sub">
+      A mill test certificate is a document, and documents can be produced. The only thing that turns
+      a claim into a fact is a measurement taken on the heat that is actually in the crate.
+    </p>
+  </div>
+</section>
+
+<!-- ============ THE FAILED DOCKET : the promise, proved ============ -->
+<section class="reject" id="reject">
+  <div class="wrap reject__grid">
+
+    <div class="reject__lede">
+      <h2>And this is the one we send when it fails.</h2>
+      <p>
+        Same alloy as the docket at the top of this page. Same element. The molybdenum came back at
+        <span class="num-out">13.92&nbsp;%</span> against a floor of <span class="num-in">15.00&nbsp;%</span>,
+        which means the heat in the crate was not C-276, whatever the mill certificate said about it.
+      </p>
+      <p>
+        The container did not load. You would have received this report in exactly the form you are
+        looking at now — before the material shipped, before it was your problem, and without anybody
+        here deciding you were better off not seeing it.
+      </p>
+      <p class="reject__note">
+        That is the entire difference between a verification service and a broker with a good story.
+        A report you only ever receive when it passes is not a report. It is marketing with a
+        laboratory letterhead.
+      </p>
+    </div>
+
+    <div class="sheetstack">
+      <div class="sheetstack__under sheetstack__under--2" aria-hidden="true"></div>
+      <div class="sheetstack__under sheetstack__under--1" aria-hidden="true"></div>
+      <figure class="sheet sheet--reject">
+        <figcaption class="sheet__flag">Specimen — illustrative, not a real test result</figcaption>
+
+        <div class="sheet__head">
+          <div>
+            <p class="sheet__no">Docket TGM–PSI–0000-R</p>
+            <p class="sheet__title">Positive Material Identification</p>
+            <p class="sheet__sub">Delivered heat · verified against certificate</p>
+          </div>
+          <img class="stamp stamp--reject" src="assets/stamp-reject.svg"
+               alt="Stamped: rejected, not shipped" width="300" height="108">
+        </div>
+
+        <dl class="sheet__meta">
+          <div><dt>Alloy ordered</dt><dd>Hastelloy C-276</dd></div>
+          <div><dt>UNS</dt><dd>N10276</dd></div>
+          <div><dt>Standard</dt><dd>ASTM B575</dd></div>
+          <div><dt>Heat</dt><dd>2H-5518-B</dd></div>
+        </dl>
+
+        <table class="assay assay--fixed">
+          <caption class="vh">Measured chemical composition against specification limits, showing molybdenum below the minimum</caption>
+          <thead>
+            <tr><th scope="col">Element</th><th scope="col">Min</th><th scope="col">Max</th><th scope="col">Measured</th><th scope="col"><span class="vh">Result</span></th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Ni</th><td>—</td><td>bal</td><td class="num">59.41</td><td class="res"></td></tr>
+            <tr class="is-out"><th scope="row">Mo</th><td>15.00</td><td>17.00</td><td class="num">13.92</td><td class="res"><span class="vh">Out of specification</span></td></tr>
+            <tr><th scope="row">Cr</th><td>14.50</td><td>16.50</td><td class="num">15.88</td><td class="res"></td></tr>
+            <tr><th scope="row">W</th><td>3.00</td><td>4.50</td><td class="num">3.11</td><td class="res"></td></tr>
+            <tr><th scope="row">Fe</th><td>4.00</td><td>7.00</td><td class="num">6.44</td><td class="res"></td></tr>
+            <tr><th scope="row">C</th><td>—</td><td>0.010</td><td class="num">0.008</td><td class="res"></td></tr>
+          </tbody>
+        </table>
+
+        <div class="remarks">
+          <p class="remarks__label">Remarks</p>
+          <p class="remarks__body">Mo 13.92 % below ASTM B575 minimum 15.00 %. Heat does not meet
+            the grade ordered. Material rejected at pre-shipment; container not loaded. Report
+            issued to buyer unaltered.</p>
+        </div>
+
+        <dl class="disp">
+          <div><dt>Disposition</dt><dd class="is-fail">Rejected — not shipped</dd></div>
+          <div><dt>Gate</dt><dd>04 · Pre-shipment</dd></div>
+        </dl>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ MATERIALS ============ -->
+<section class="materials" id="materials">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Materials</h2>
+      <p class="lede">Nickel alloys, superalloys and the grade-critical stainless that gets ordered in
+      the same breath. Nineteen grades, in pipe and tube, fittings, bar and rod, sheet, plate and coil,
+      and wire.</p>
+    </header>
+
+    <table class="grades">
+      <caption class="vh">Grades available, with the verification focus for each</caption>
+      <thead>
+        <tr>
+          <th scope="col">Grade</th>
+          <th scope="col">UNS</th>
+          <th scope="col">Standard</th>
+          <th scope="col">What we verify</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row"><a href="materials/inconel-625.html">Inconel 625</a></th><td>N06625</td><td>ASTM B443 / B444 / B446</td><td>Nb + Mo content: the two elements a price has to come out of.</td></tr>
+        <tr><th scope="row"><a href="materials/inconel-718.html">Inconel 718</a></th><td>N07718</td><td>ASTM B637</td><td>Heat treatment condition and hardness, not just chemistry.</td></tr>
+        <tr><th scope="row"><a href="materials/hastelloy-c-276.html">Hastelloy C-276</a></th><td>N10276</td><td>ASTM B575</td><td>Molybdenum, the classic substitution tell.</td></tr>
+        <tr><th scope="row"><a href="materials/hastelloy-c-22.html">Hastelloy C-22</a></th><td>N06022</td><td>ASTM B575</td><td>Cr and Mo balance; commonly cross-sold as C-276.</td></tr>
+        <tr><th scope="row"><a href="materials/incoloy-825.html">Incoloy 825</a></th><td>N08825</td><td>ASTM B424 / B425</td><td>Ni and Ti content against a 904L substitution.</td></tr>
+        <tr><th scope="row"><a href="materials/incoloy-800h.html">Incoloy 800H</a></th><td>N08810</td><td>ASTM B409</td><td>Carbon and grain size. 800H is 800 only if both hold.</td></tr>
+        <tr><th scope="row"><a href="materials/monel-400.html">Monel 400</a></th><td>N04400</td><td>ASTM B127 / B164</td><td>Cu:Ni ratio on the delivered heat.</td></tr>
+        <tr><th scope="row"><a href="materials/super-duplex-2507.html">Super duplex 2507</a></th><td>S32750</td><td>ASTM A240 / A790</td><td>PREN calculated from measured values, plus ferrite balance.</td></tr>
+      </tbody>
+    </table>
+    <p class="materials__more">
+      Also sourced to order: Inconel 600, 601, X-750 · Incoloy 800, 925 · Monel K-500 ·
+      Hastelloy B-2, B-3, X · 904L · 2205.
+    </p>
+    <p class="materials__cta"><a class="btn btn--ghost" href="materials/index.html">All nineteen grades, with the test regime for each</a></p>
+  </div>
+</section>
+
+<!-- ============ ENGAGEMENT ============ -->
+<section class="engagement" id="engagement">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Two ways to work with us</h2>
+      <p class="lede">The verification chain is identical in both. What changes is who holds the contract.</p>
+    </header>
+
+    <div class="tiers">
+      <article class="tier">
+        <h3>Managed Sourcing</h3>
+        <p class="tier__who">For buyers with their own import capability who want the risk taken out of it.</p>
+        <ul class="ticks">
+          <li>You contract the mill directly</li>
+          <li>We qualify it, specify it and lock the test regime</li>
+          <li>We commission and manage independent verification</li>
+          <li>We coordinate freight, customs and delivery</li>
+          <li>You may nominate the inspection house</li>
+        </ul>
+        <p class="tier__fee">Fee against the order value.</p>
+      </article>
+
+      <article class="tier tier--lead">
+        <h3>Delivered</h3>
+        <p class="tier__who">For buyers who want one Australian invoice and none of the exposure.</p>
+        <ul class="ticks">
+          <li>We take title to the material</li>
+          <li>You buy from an Australian company on AUD terms</li>
+          <li>No FX exposure, no import obligations, no foreign counterparty</li>
+          <li>Verification identical: the report still comes to you</li>
+          <li>Material replaced if it fails what was specified</li>
+        </ul>
+        <p class="tier__fee">Landed price per tonne, quoted to your yard.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHO STANDS BEHIND IT ============ -->
+<section class="entity" id="entity">
+  <div class="wrap entity__grid">
+    <div>
+      <h2>Who stands behind it</h2>
+      <p>
+        True Grade Metals is the alloy sourcing arm of <b>Bilt&nbsp;&amp;&nbsp;Co</b>, an Australian
+        company based in Rockhampton, Queensland. That matters for exactly one reason: when material
+        is wrong, you are dealing with an Australian company under Australian law, not an arbitration
+        clause in a language you don’t read.
+      </p>
+      <p>
+        We are direct about what we are. We are not a mill and we do not employ metallurgists.
+        We qualify the mills, we specify to the standard, we commission accredited independent
+        laboratories to do the testing, and we stand behind what lands. The failed reports reach you
+        along with the passing ones, because a verification service that filters its own results is
+        not a verification service.
+      </p>
+    </div>
+    <dl class="facts">
+      <div><dt>Trading entity</dt><dd class="ph">Bilt &amp; Co — full entity name to confirm</dd></div>
+      <div><dt>ABN</dt><dd class="ph">To supply</dd></div>
+      <div><dt>Based</dt><dd>Rockhampton, Queensland</dd></div>
+      <div><dt>Serving</dt><dd>All Australian ports</dd></div>
+      <div><dt>Verification by</dt><dd class="ph">Accredited third-party inspection houses — named on engagement</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ RFQ ============ -->
+<section class="rfq" id="rfq">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Gate one starts here</h2>
+      <p class="lede">
+        This form asks more than a contact form does, on purpose. Specification lock is the gate that
+        prevents the argument later, and the answers below are what we need to price the job properly
+        rather than guess at it. If you don’t have all of it, send what you have.
+        Fields marked <span class="req" aria-hidden="true">*</span> are required.
+      </p>
+    </header>
+
+    <form class="form" name="rfq" method="POST" data-netlify="true" netlify-honeypot="company-website">
+      <input type="hidden" name="form-name" value="rfq">
+      <p class="vh"><label>Leave blank <input name="company-website"></label></p>
+
+      <fieldset>
+        <legend>Material</legend>
+        <div class="form__row">
+          <label>Grade or alloy<span class="req" aria-hidden="true">*</span><input name="grade" required placeholder="e.g. Hastelloy C-276"></label>
+          <label>Standard<input name="standard" placeholder="e.g. ASTM B575"></label>
+        </div>
+        <div class="form__row">
+          <label>Product form
+            <select name="form">
+              <option value="">Select…</option>
+              <option>Pipe &amp; tube</option><option>Fittings</option><option>Bar &amp; rod</option>
+              <option>Sheet, plate &amp; coil</option><option>Wire</option>
+            </select>
+          </label>
+          <label>Dimensions &amp; tolerance<input name="dimensions" placeholder="e.g. 168.3 OD × 7.11 WT"></label>
+          <label>Quantity<input name="quantity" placeholder="e.g. 6 t"></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Service conditions</legend>
+        <p class="fieldset__why">We ask because the service determines which tests actually matter.</p>
+        <div class="form__row">
+          <label>Medium<input name="medium" placeholder="e.g. wet chlorine"></label>
+          <label>Temperature<input name="temperature" placeholder="e.g. 120 °C"></label>
+          <label>Pressure<input name="pressure" placeholder="e.g. 1.6 MPa"></label>
+        </div>
+        <label class="form__full">Required certification &amp; test regime
+          <input name="certification" placeholder="e.g. EN 10204 3.1, PMI, PT, hydro">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Delivery &amp; contact</legend>
+        <div class="form__row">
+          <label>Delivery port or yard<input name="destination" placeholder="e.g. Gladstone"></label>
+          <label>Required on site by<input name="required-by" type="date"></label>
+        </div>
+        <div class="form__row">
+          <label>Name<span class="req" aria-hidden="true">*</span><input name="name" required></label>
+          <label>Company<span class="req" aria-hidden="true">*</span><input name="company" required></label>
+          <label>Email<span class="req" aria-hidden="true">*</span><input name="email" type="email" required></label>
+          <label>Phone<input name="phone" type="tel"></label>
+        </div>
+        <label class="form__full">Anything else<textarea name="notes" rows="3"></textarea></label>
+      </fieldset>
+
+      <div class="form__submit">
+        <button class="btn" type="submit">File enquiry</button>
+        <p>We reply with availability, indicative landed price, lead time and the test regime we’d specify.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <p class="foot__name">True Grade Metals</p>
+      <p class="foot__sub">Verified alloy sourcing for Australian industry.<br>
+        A division of Bilt&nbsp;&amp;&nbsp;Co, Rockhampton QLD.</p>
+    </div>
+    <dl class="foot__contact">
+      <div><dt>Enquiries</dt><dd class="ph">email to supply</dd></div>
+      <div><dt>Phone</dt><dd class="ph">number to supply</dd></div>
+      <div><dt>ABN</dt><dd class="ph">to supply</dd></div>
+    </dl>
+    <p class="foot__legal">
+      Grade data is published standards information and is provided for reference only; it does not
+      constitute a specification for any application. © <span id="yr">2026</span> Bilt &amp; Co.
+    </p>
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

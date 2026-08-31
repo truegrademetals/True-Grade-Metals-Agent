@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="True Grade Metals">
+  <rect width="64" height="64" fill="#15181b"/>
+  <rect x="8" y="8" width="48" height="48" fill="none" stroke="#fbfbf9" stroke-width="3"/>
+  <path d="M18 33.5 L28 43 L47 21" fill="none" stroke="#fbfbf9" stroke-width="7"
+        stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

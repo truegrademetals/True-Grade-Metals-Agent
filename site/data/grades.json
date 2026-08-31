@@ -1,0 +1,1906 @@
+{
+  "note": "Composition and mechanical values are published standards data, reproduced for reference only. Always specify to the current revision of the governing standard.",
+  "families": [
+    {
+      "id": "nickel-alloy",
+      "label": "Nickel alloy"
+    },
+    {
+      "id": "superalloy",
+      "label": "Superalloy"
+    },
+    {
+      "id": "stainless",
+      "label": "Grade-critical stainless"
+    }
+  ],
+  "grades": [
+    {
+      "slug": "inconel-625",
+      "name": "Inconel 625",
+      "launch": true,
+      "family": "superalloy",
+      "uns": "N06625",
+      "wnr": "2.4856",
+      "en": "NiCr22Mo9Nb",
+      "summary": "A niobium-stabilised nickel-chromium-molybdenum alloy that gets its strength from solid-solution hardening rather than heat treatment, so it arrives strong and stays strong without post-weld ageing.",
+      "service": [
+        "Resists pitting, crevice corrosion and chloride stress-corrosion cracking",
+        "Seawater and sour service, flue gas desulphurisation, chemical processing",
+        "Serviceable from cryogenic temperatures to roughly 980 °C"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B443"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B444"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B446"
+        },
+        {
+          "form": "Fittings",
+          "spec": "ASTM B366"
+        },
+        {
+          "form": "Forgings",
+          "spec": "ASTM B564"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "58.0",
+          "max": "—"
+        },
+        {
+          "el": "Cr",
+          "min": "20.0",
+          "max": "23.0"
+        },
+        {
+          "el": "Mo",
+          "min": "8.0",
+          "max": "10.0"
+        },
+        {
+          "el": "Nb+Ta",
+          "min": "3.15",
+          "max": "4.15"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "5.0"
+        },
+        {
+          "el": "Co",
+          "min": "—",
+          "max": "1.0"
+        },
+        {
+          "el": "Al",
+          "min": "—",
+          "max": "0.40"
+        },
+        {
+          "el": "Ti",
+          "min": "—",
+          "max": "0.40"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.10"
+        },
+        {
+          "el": "S",
+          "min": "—",
+          "max": "0.015"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "827 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "414 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "30 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Annealed"
+        }
+      ],
+      "verify": {
+        "risk": "Niobium and molybdenum are the two most expensive elements in the alloy, so a price cut has to come out of one of them. Material light on Nb+Ta will still look like 625 on a certificate and still weld, and it will fail in service years early.",
+        "regime": [
+          "PMI specified on the delivered heat, reading Nb+Ta and Mo against B443 limits",
+          "Certificate cross-checked to the heat number actually in the crate",
+          "EN 10204 3.1 or 3.2 as specified",
+          "Intergranular corrosion testing where the service calls for it"
+        ]
+      },
+      "tell": "Niobium and molybdenum are the cost, so they are the thinning risk"
+    },
+    {
+      "slug": "inconel-718",
+      "name": "Inconel 718",
+      "launch": true,
+      "family": "superalloy",
+      "uns": "N07718",
+      "wnr": "2.4668",
+      "en": "NiCr19Fe19Nb5Mo3",
+      "summary": "A precipitation-hardening nickel-iron-chromium superalloy. Its properties come from a controlled solution and ageing cycle, which means the heat treatment matters as much as the chemistry.",
+      "service": [
+        "High-strength service to roughly 700 °C",
+        "Downhole tooling, valves, turbine components, fasteners",
+        "Good weldability for a precipitation-hardened alloy — resists post-weld strain-age cracking"
+      ],
+      "standards": [
+        {
+          "form": "Bar, forgings & rings",
+          "spec": "ASTM B637"
+        },
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B670"
+        },
+        {
+          "form": "Forgings",
+          "spec": "ASTM B564"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "50.0",
+          "max": "55.0"
+        },
+        {
+          "el": "Cr",
+          "min": "17.0",
+          "max": "21.0"
+        },
+        {
+          "el": "Nb+Ta",
+          "min": "4.75",
+          "max": "5.50"
+        },
+        {
+          "el": "Mo",
+          "min": "2.80",
+          "max": "3.30"
+        },
+        {
+          "el": "Ti",
+          "min": "0.65",
+          "max": "1.15"
+        },
+        {
+          "el": "Al",
+          "min": "0.20",
+          "max": "0.80"
+        },
+        {
+          "el": "Co",
+          "min": "—",
+          "max": "1.0"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.08"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "bal"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "1276 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "1034 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "12 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Solution treated & aged, ASTM B637 — condition to be specified on order"
+        }
+      ],
+      "verify": {
+        "risk": "718 is the grade where chemistry alone proves nothing. An under-aged or incorrectly solution-treated heat has textbook composition and will not make its mechanical minimums. Certificates showing chemistry but vague heat-treatment records are the warning sign.",
+        "regime": [
+          "Heat treatment records demanded and read, not just filed",
+          "Hardness and tensile verification on the delivered heat",
+          "PMI confirming Nb+Ta and Ti against B637",
+          "Grain size where the application is fatigue-driven"
+        ]
+      },
+      "tell": "Chemistry proves nothing here; the heat treatment is the grade"
+    },
+    {
+      "slug": "hastelloy-c-276",
+      "name": "Hastelloy C-276",
+      "launch": true,
+      "family": "superalloy",
+      "uns": "N10276",
+      "wnr": "2.4819",
+      "en": "NiMo16Cr15W",
+      "summary": "The reference nickel-molybdenum-chromium alloy for aggressive wet chemical service, and one of the few materials that handles both oxidising and reducing conditions without a change of grade.",
+      "service": [
+        "Wet chlorine, hypochlorite, chlorine dioxide and ferric chloride",
+        "Sour gas, flue gas desulphurisation, pulp and paper bleaching",
+        "Very low carbon and silicon give excellent as-welded corrosion resistance"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B575"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B622"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B574"
+        },
+        {
+          "form": "Fittings",
+          "spec": "ASTM B366"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "—",
+          "max": "bal"
+        },
+        {
+          "el": "Mo",
+          "min": "15.0",
+          "max": "17.0"
+        },
+        {
+          "el": "Cr",
+          "min": "14.5",
+          "max": "16.5"
+        },
+        {
+          "el": "Fe",
+          "min": "4.0",
+          "max": "7.0"
+        },
+        {
+          "el": "W",
+          "min": "3.0",
+          "max": "4.5"
+        },
+        {
+          "el": "Co",
+          "min": "—",
+          "max": "2.5"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "1.0"
+        },
+        {
+          "el": "V",
+          "min": "—",
+          "max": "0.35"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.010"
+        },
+        {
+          "el": "Si",
+          "min": "—",
+          "max": "0.08"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "690 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "283 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "40 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Solution annealed"
+        }
+      ],
+      "verify": {
+        "risk": "Molybdenum is the single most expensive element in the alloy, which puts the whole cost-down incentive on one number, and that number is invisible without measurement. Carbon is the second check: C-276's very low carbon ceiling is what gives it as-welded performance, and a heat over 0.010 % will sensitise at the weld.",
+        "regime": [
+          "PMI specified on the delivered heat, reading Mo against the 15.0–17.0 window",
+          "Carbon verified against the 0.010 % maximum",
+          "ASTM G28 method A intergranular corrosion testing where specified",
+          "Solution anneal records confirmed"
+        ]
+      },
+      "tell": "Molybdenum is the substitution tell on C-276"
+    },
+    {
+      "slug": "hastelloy-c-22",
+      "name": "Hastelloy C-22",
+      "launch": true,
+      "family": "superalloy",
+      "uns": "N06022",
+      "wnr": "2.4602",
+      "en": "NiCr21Mo14W",
+      "summary": "A higher-chromium alternative to C-276 with better resistance to oxidising media and localised attack, and better as-welded stability across a wider range of conditions.",
+      "service": [
+        "Oxidising and mixed acid service where C-276 is marginal",
+        "Pharmaceutical and chemical process vessels, scrubbers, flue gas systems",
+        "Outstanding resistance to pitting and crevice corrosion"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B575"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B622"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B574"
+        },
+        {
+          "form": "Fittings",
+          "spec": "ASTM B366"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "—",
+          "max": "bal"
+        },
+        {
+          "el": "Cr",
+          "min": "20.0",
+          "max": "22.5"
+        },
+        {
+          "el": "Mo",
+          "min": "12.5",
+          "max": "14.5"
+        },
+        {
+          "el": "Fe",
+          "min": "2.0",
+          "max": "6.0"
+        },
+        {
+          "el": "W",
+          "min": "2.5",
+          "max": "3.5"
+        },
+        {
+          "el": "Co",
+          "min": "—",
+          "max": "2.5"
+        },
+        {
+          "el": "V",
+          "min": "—",
+          "max": "0.35"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.015"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "690 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "310 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "45 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Solution annealed"
+        }
+      ],
+      "verify": {
+        "risk": "C-22 and C-276 are easy to cross-sell in either direction: the two look identical in the crate, and their certificates read alike to anyone not checking the numbers. The alloys are not interchangeable: their chromium and molybdenum balance is different, and so is the service each one survives.",
+        "regime": [
+          "PMI distinguishing Cr 20.0–22.5 and Mo 12.5–14.5 from the C-276 windows",
+          "Certificate matched to the heat number in the crate",
+          "ASTM G28 testing where specified",
+          "Confirmation the grade ordered is the grade quoted, in writing, before the PO"
+        ]
+      },
+      "tell": "C-22 and C-276 are cross-sold in both directions"
+    },
+    {
+      "slug": "incoloy-825",
+      "name": "Incoloy 825",
+      "launch": true,
+      "family": "nickel-alloy",
+      "uns": "N08825",
+      "wnr": "2.4858",
+      "en": "NiCr21Mo",
+      "summary": "A titanium-stabilised nickel-iron-chromium alloy with copper and molybdenum, engineered for both oxidising and reducing acids at a materially lower cost than the C-family alloys.",
+      "service": [
+        "Sulphuric and phosphoric acid service, pickling plant, sour gas",
+        "Excellent resistance to chloride stress-corrosion cracking",
+        "Titanium stabilisation resists sensitisation after welding"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B424"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B423"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B425"
+        },
+        {
+          "form": "Forgings",
+          "spec": "ASTM B564"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "38.0",
+          "max": "46.0"
+        },
+        {
+          "el": "Cr",
+          "min": "19.5",
+          "max": "23.5"
+        },
+        {
+          "el": "Fe",
+          "min": "22.0",
+          "max": "—"
+        },
+        {
+          "el": "Mo",
+          "min": "2.5",
+          "max": "3.5"
+        },
+        {
+          "el": "Cu",
+          "min": "1.5",
+          "max": "3.0"
+        },
+        {
+          "el": "Ti",
+          "min": "0.6",
+          "max": "1.2"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "1.0"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.05"
+        },
+        {
+          "el": "Al",
+          "min": "—",
+          "max": "0.2"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "586 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "241 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "30 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Annealed"
+        }
+      ],
+      "verify": {
+        "risk": "904L is cheaper, superficially similar and roughly half the nickel, which makes it the obvious substitution to attempt. The other failure is titanium below the 0.6 % floor, which removes the stabilisation that stops the alloy sensitising at the weld — a defect that only appears once the vessel is in service.",
+        "regime": [
+          "PMI reading Ni against the 38.0–46.0 window to rule out a 904L substitution",
+          "Titanium verified against the 0.6 % minimum",
+          "Molybdenum and copper confirmed against B424",
+          "Stabilising anneal records where specified"
+        ]
+      },
+      "tell": "A 904L substitution reads almost right until you measure nickel"
+    },
+    {
+      "slug": "incoloy-800h",
+      "name": "Incoloy 800H",
+      "launch": true,
+      "family": "superalloy",
+      "uns": "N08810",
+      "wnr": "1.4958",
+      "en": "X8NiCrAlTi32-21",
+      "summary": "The controlled-carbon, coarse-grain version of Incoloy 800, specified where creep and rupture strength at high temperature are the governing properties.",
+      "service": [
+        "Sustained service above 600 °C — furnace tubing, heat treatment fixtures, petrochemical piping",
+        "Creep and stress-rupture strength well beyond standard 800",
+        "Resists carburisation and oxidation in cyclic heat"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B409"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B407"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B408"
+        },
+        {
+          "form": "Forgings",
+          "spec": "ASTM B564"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "30.0",
+          "max": "35.0"
+        },
+        {
+          "el": "Cr",
+          "min": "19.0",
+          "max": "23.0"
+        },
+        {
+          "el": "Fe",
+          "min": "39.5",
+          "max": "—"
+        },
+        {
+          "el": "C",
+          "min": "0.05",
+          "max": "0.10"
+        },
+        {
+          "el": "Al",
+          "min": "0.15",
+          "max": "0.60"
+        },
+        {
+          "el": "Ti",
+          "min": "0.15",
+          "max": "0.60"
+        },
+        {
+          "el": "Al+Ti",
+          "min": "0.30",
+          "max": "1.20"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "1.5"
+        },
+        {
+          "el": "Cu",
+          "min": "—",
+          "max": "0.75"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "450 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "170 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "30 %"
+        },
+        {
+          "prop": "Grain size",
+          "value": "ASTM No. 5 or coarser"
+        }
+      ],
+      "verify": {
+        "risk": "800H is Incoloy 800 only if two things hold: carbon inside the narrow 0.05–0.10 % band, and grain size ASTM 5 or coarser after a high-temperature anneal. Standard 800 supplied against an 800H order will pass a chemistry-only check on most elements and then creep at temperature. This is the substitution that certificates hide best.",
+        "regime": [
+          "Carbon verified against the 0.05–0.10 % band, not merely against a maximum",
+          "Grain size determination, which a chemistry-only certificate will not cover",
+          "Annealing temperature records demanded",
+          "PMI for Al+Ti against the 0.30–1.20 % window"
+        ]
+      },
+      "tell": "800H is 800 only if carbon and grain size both hold"
+    },
+    {
+      "slug": "monel-400",
+      "name": "Monel 400",
+      "launch": true,
+      "family": "nickel-alloy",
+      "uns": "N04400",
+      "wnr": "2.4360",
+      "en": "NiCu30Fe",
+      "summary": "A solid-solution nickel-copper alloy, essentially unchanged in composition for over a century, and still the default for seawater and hydrofluoric acid service.",
+      "service": [
+        "Seawater, brackish water and marine service — resists erosion and cavitation",
+        "Hydrofluoric acid, alkalis, and reducing conditions",
+        "Retains strength and toughness down to cryogenic temperatures"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B127"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B165"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B164"
+        },
+        {
+          "form": "Fittings",
+          "spec": "ASTM B366"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "63.0",
+          "max": "—"
+        },
+        {
+          "el": "Cu",
+          "min": "28.0",
+          "max": "34.0"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "2.5"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "2.0"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.3"
+        },
+        {
+          "el": "Si",
+          "min": "—",
+          "max": "0.5"
+        },
+        {
+          "el": "S",
+          "min": "—",
+          "max": "0.024"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "480 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "195 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "35 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Annealed"
+        }
+      ],
+      "verify": {
+        "risk": "Nickel is roughly four times the price of copper, so the economic incentive runs one way: push nickel toward the 63 % floor and copper toward the 34 % ceiling. A heat sitting outside the ratio still looks like Monel and still machines like Monel, and it corrodes faster in exactly the seawater service it was bought for.",
+        "regime": [
+          "PMI specified on the delivered heat, reading the Ni:Cu ratio rather than nickel alone",
+          "Iron verified against the 2.5 % maximum",
+          "Sulphur checked where hot working or welding is planned",
+          "Certificate matched to the heat number in the crate"
+        ]
+      },
+      "tell": "Nickel costs four times copper, and the ratio is the alloy"
+    },
+    {
+      "slug": "super-duplex-2507",
+      "name": "Super duplex 2507",
+      "launch": true,
+      "family": "stainless",
+      "uns": "S32750",
+      "wnr": "1.4410",
+      "en": "X2CrNiMoN25-7-4",
+      "summary": "A 25-chromium super duplex stainless with roughly double the yield strength of 316L, which usually means thinner sections and less weight for the same duty.",
+      "service": [
+        "Seawater systems, desalination, offshore process piping",
+        "Chloride-bearing service where austenitic grades crack",
+        "PREN typically 42 or above"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM A240"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM A790"
+        },
+        {
+          "form": "Forgings & fittings",
+          "spec": "ASTM A182 / A815"
+        },
+        {
+          "form": "Bar",
+          "spec": "ASTM A276 / A479"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Cr",
+          "min": "24.0",
+          "max": "26.0"
+        },
+        {
+          "el": "Ni",
+          "min": "6.0",
+          "max": "8.0"
+        },
+        {
+          "el": "Mo",
+          "min": "3.0",
+          "max": "5.0"
+        },
+        {
+          "el": "N",
+          "min": "0.24",
+          "max": "0.32"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "1.2"
+        },
+        {
+          "el": "Cu",
+          "min": "—",
+          "max": "0.5"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.030"
+        },
+        {
+          "el": "S",
+          "min": "—",
+          "max": "0.020"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "bal"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "800 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "550 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "15 %"
+        },
+        {
+          "prop": "Ferrite content",
+          "value": "Typically 35–55 %"
+        }
+      ],
+      "verify": {
+        "risk": "Duplex grades fail on structure, not chemistry. Incorrect solution annealing or an uncontrolled cool leaves intermetallic sigma phase and a ferrite balance outside 35–55 %, which destroys toughness and corrosion resistance while every element on the certificate still reads in range. Nitrogen at the low end also quietly drops the PREN below what was specified.",
+        "regime": [
+          "Ferrite content measured on the delivered material",
+          "PREN calculated from measured values, not from the nominal grade",
+          "Solution anneal and quench records demanded",
+          "ASTM A923 testing for intermetallic phase where specified",
+          "Impact testing where low-temperature service applies"
+        ]
+      },
+      "tell": "Duplex fails on structure while the chemistry still reads clean"
+    },
+    {
+      "slug": "inconel-600",
+      "name": "Inconel 600",
+      "launch": false,
+      "family": "superalloy",
+      "uns": "N06600",
+      "wnr": "2.4816",
+      "en": "NiCr15Fe",
+      "summary": "The original nickel-chromium-iron alloy for heat and corrosion resistance, still specified widely for furnace and chemical service.",
+      "service": [
+        "Oxidising and carburising atmospheres to roughly 1100 °C",
+        "Resists chloride stress-corrosion cracking",
+        "Heat treatment fixtures, furnace components, chemical processing"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B168"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B167"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B166"
+        },
+        {
+          "form": "Fittings",
+          "spec": "ASTM B366"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "72.0",
+          "max": "—"
+        },
+        {
+          "el": "Cr",
+          "min": "14.0",
+          "max": "17.0"
+        },
+        {
+          "el": "Fe",
+          "min": "6.0",
+          "max": "10.0"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "1.0"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.15"
+        },
+        {
+          "el": "Cu",
+          "min": "—",
+          "max": "0.5"
+        },
+        {
+          "el": "Si",
+          "min": "—",
+          "max": "0.5"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "550 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "240 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "30 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Annealed"
+        }
+      ],
+      "verify": {
+        "risk": "Nickel at 72 % minimum makes 600 an expensive alloy to make honestly, and the pressure is always on the nickel floor. Iron drifting above the 10 % ceiling is the usual sign that the melt was stretched.",
+        "regime": [
+          "PMI reading nickel against the 72 % minimum",
+          "Iron verified against the 6.0–10.0 % window",
+          "Certificate matched to the delivered heat"
+        ]
+      },
+      "tell": "A 72 % nickel floor is expensive to hold honestly"
+    },
+    {
+      "slug": "inconel-601",
+      "name": "Inconel 601",
+      "launch": false,
+      "family": "superalloy",
+      "uns": "N06601",
+      "wnr": "2.4851",
+      "en": "NiCr23Fe15Al",
+      "summary": "An aluminium-bearing development of 600 that forms a tenacious oxide skin, giving markedly better high-temperature oxidation resistance.",
+      "service": [
+        "Cyclic high-temperature oxidation to roughly 1200 °C",
+        "Furnace muffles and retorts, radiant tubes, thermal processing",
+        "Aluminium addition drives the oxidation resistance"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B168"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B167"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B166"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "58.0",
+          "max": "63.0"
+        },
+        {
+          "el": "Cr",
+          "min": "21.0",
+          "max": "25.0"
+        },
+        {
+          "el": "Al",
+          "min": "1.0",
+          "max": "1.7"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "bal"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.10"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "1.0"
+        },
+        {
+          "el": "Cu",
+          "min": "—",
+          "max": "1.0"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "550 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "205 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "30 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Annealed"
+        }
+      ],
+      "verify": {
+        "risk": "Aluminium is the entire reason to buy 601 over 600. A heat below the 1.0 % floor is functionally 600 sold at a premium, and it will scale in exactly the cyclic service it was chosen for.",
+        "regime": [
+          "PMI reading aluminium against the 1.0–1.7 % window",
+          "Chromium verified against the 21.0–25.0 % window",
+          "Certificate matched to the delivered heat"
+        ]
+      },
+      "tell": "Without its aluminium, 601 is 600 at a premium"
+    },
+    {
+      "slug": "inconel-x-750",
+      "name": "Inconel X-750",
+      "launch": false,
+      "family": "superalloy",
+      "uns": "N07750",
+      "wnr": "2.4669",
+      "en": "NiCr15Fe7TiAl",
+      "summary": "A precipitation-hardening variant of 600, using titanium and aluminium to deliver high strength and relaxation resistance at temperature.",
+      "service": [
+        "Springs, fasteners and rotor components to roughly 700 °C",
+        "Excellent relaxation resistance under sustained load",
+        "Properties depend on a controlled ageing cycle"
+      ],
+      "standards": [
+        {
+          "form": "Bar, forgings & rings",
+          "spec": "ASTM B637"
+        },
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "AMS 5542"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "70.0",
+          "max": "—"
+        },
+        {
+          "el": "Cr",
+          "min": "14.0",
+          "max": "17.0"
+        },
+        {
+          "el": "Fe",
+          "min": "5.0",
+          "max": "9.0"
+        },
+        {
+          "el": "Ti",
+          "min": "2.25",
+          "max": "2.75"
+        },
+        {
+          "el": "Nb+Ta",
+          "min": "0.70",
+          "max": "1.20"
+        },
+        {
+          "el": "Al",
+          "min": "0.40",
+          "max": "1.00"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.08"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "1100 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "690 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "20 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Age hardened, ASTM B637 — condition to be specified on order"
+        }
+      ],
+      "verify": {
+        "risk": "Like 718, X-750 is a heat-treatment grade. Chemistry inside limits proves nothing about whether the ageing cycle was run correctly, and an under-aged spring relaxes in service.",
+        "regime": [
+          "Heat treatment records demanded and read",
+          "Hardness verification on the delivered heat",
+          "PMI for Ti and Al against B637"
+        ]
+      },
+      "tell": "An under-aged spring relaxes in service and tests fine cold"
+    },
+    {
+      "slug": "incoloy-800",
+      "name": "Incoloy 800",
+      "launch": false,
+      "family": "superalloy",
+      "uns": "N08800",
+      "wnr": "1.4876",
+      "en": "X10NiCrAlTi32-21",
+      "summary": "The base nickel-iron-chromium grade of the 800 family, used where oxidation and carburisation resistance matter more than creep strength.",
+      "service": [
+        "Process piping and heat exchangers to roughly 600 °C",
+        "Resists oxidation, carburisation and chloride stress-corrosion cracking",
+        "Where sustained creep service is required, specify 800H or 800HT"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B409"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B407"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B408"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "30.0",
+          "max": "35.0"
+        },
+        {
+          "el": "Cr",
+          "min": "19.0",
+          "max": "23.0"
+        },
+        {
+          "el": "Fe",
+          "min": "39.5",
+          "max": "—"
+        },
+        {
+          "el": "Al",
+          "min": "0.15",
+          "max": "0.60"
+        },
+        {
+          "el": "Ti",
+          "min": "0.15",
+          "max": "0.60"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.10"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "1.5"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "517 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "205 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "30 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Annealed"
+        }
+      ],
+      "verify": {
+        "risk": "The risk on 800 runs the other way to 800H: buyers are sometimes sold 800 against an 800H requirement. If the application involves sustained high temperature, the grade designation on the order is the thing to check first.",
+        "regime": [
+          "Confirmation that 800, not 800H, is what the application actually requires",
+          "PMI for Ni and Cr against B409",
+          "Certificate matched to the delivered heat"
+        ]
+      },
+      "tell": "The risk runs backwards: 800 sold against an 800H requirement"
+    },
+    {
+      "slug": "incoloy-925",
+      "name": "Incoloy 925",
+      "launch": false,
+      "family": "superalloy",
+      "uns": "N09925",
+      "wnr": "—",
+      "en": "—",
+      "summary": "An age-hardenable development of 825, adding titanium and aluminium to reach high strength while keeping the corrosion resistance of the base alloy.",
+      "service": [
+        "Sour gas wellhead and downhole components",
+        "High strength with resistance to sulphide stress cracking",
+        "Often specified to NACE MR0175 / ISO 15156"
+      ],
+      "standards": [
+        {
+          "form": "Bar & forgings",
+          "spec": "ASTM B805"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B983"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "42.0",
+          "max": "46.0"
+        },
+        {
+          "el": "Cr",
+          "min": "19.5",
+          "max": "22.5"
+        },
+        {
+          "el": "Mo",
+          "min": "2.5",
+          "max": "3.5"
+        },
+        {
+          "el": "Cu",
+          "min": "1.5",
+          "max": "3.0"
+        },
+        {
+          "el": "Ti",
+          "min": "1.9",
+          "max": "2.4"
+        },
+        {
+          "el": "Al",
+          "min": "0.1",
+          "max": "0.5"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "bal"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.03"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "1000 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "760 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "18 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Solution treated & aged — condition to be specified on order"
+        }
+      ],
+      "verify": {
+        "risk": "925 is usually bought for sour service, where the qualifying document is the NACE compliance record and the hardness result, not the chemistry. Material supplied without hardness verification cannot be shown to meet MR0175 whatever the certificate says.",
+        "regime": [
+          "Hardness verification against the NACE MR0175 / ISO 15156 limit",
+          "Heat treatment records demanded",
+          "PMI for Ti and Mo against B805"
+        ]
+      },
+      "tell": "Bought for sour service, qualified by hardness, not chemistry"
+    },
+    {
+      "slug": "monel-k-500",
+      "name": "Monel K-500",
+      "launch": false,
+      "family": "nickel-alloy",
+      "uns": "N05500",
+      "wnr": "2.4375",
+      "en": "NiCu30Al",
+      "summary": "Age-hardenable Monel, using aluminium and titanium to roughly triple the yield strength of 400 while keeping its seawater performance.",
+      "service": [
+        "Pump shafts, propeller shafts, fasteners and valve stems in marine service",
+        "Strength of a structural alloy with the corrosion behaviour of Monel 400",
+        "Non-magnetic and spark-resistant"
+      ],
+      "standards": [
+        {
+          "form": "Bar, rod & forgings",
+          "spec": "ASTM B865"
+        },
+        {
+          "form": "Fasteners",
+          "spec": "ASTM F467 / F468"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "63.0",
+          "max": "—"
+        },
+        {
+          "el": "Cu",
+          "min": "27.0",
+          "max": "33.0"
+        },
+        {
+          "el": "Al",
+          "min": "2.30",
+          "max": "3.15"
+        },
+        {
+          "el": "Ti",
+          "min": "0.35",
+          "max": "0.85"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "2.0"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "1.5"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.25"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "965 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "690 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "20 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Age hardened — condition to be specified on order"
+        }
+      ],
+      "verify": {
+        "risk": "K-500 is vulnerable to hydrogen embrittlement if over-aged or over-hardened, which makes the heat treatment record and the hardness result the safety-critical documents. Aluminium below the 2.30 % floor means the age hardening cannot reach specified strength.",
+        "regime": [
+          "Hardness verification on the delivered material",
+          "Heat treatment records demanded and read",
+          "PMI for Al and Ti against B865"
+        ]
+      },
+      "tell": "Over-ageing buys strength and hydrogen embrittlement together"
+    },
+    {
+      "slug": "hastelloy-b-2",
+      "name": "Hastelloy B-2",
+      "launch": false,
+      "family": "superalloy",
+      "uns": "N10665",
+      "wnr": "2.4617",
+      "en": "NiMo28",
+      "summary": "A nickel-molybdenum alloy built for hydrochloric acid and other strongly reducing conditions, with chromium deliberately kept low.",
+      "service": [
+        "Hydrochloric acid at all concentrations and temperatures",
+        "Sulphuric, acetic and phosphoric acid in reducing conditions",
+        "Not for oxidising service or ferric and cupric contamination"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B333"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B622"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B335"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "—",
+          "max": "bal"
+        },
+        {
+          "el": "Mo",
+          "min": "26.0",
+          "max": "30.0"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "2.0"
+        },
+        {
+          "el": "Cr",
+          "min": "—",
+          "max": "1.0"
+        },
+        {
+          "el": "Co",
+          "min": "—",
+          "max": "1.0"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.02"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "760 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "350 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "40 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Solution annealed"
+        }
+      ],
+      "verify": {
+        "risk": "B-2 is prone to intermetallic precipitation in the heat-affected zone, so as-welded performance depends entirely on the solution anneal being right. Iron or chromium above the ceilings compromises the reducing-acid resistance the alloy exists for.",
+        "regime": [
+          "PMI reading Mo against the 26.0–30.0 % window",
+          "Iron and chromium verified against their maximums",
+          "Solution anneal records demanded",
+          "Corrosion testing where the service is severe"
+        ]
+      },
+      "tell": "The weld zone is where B-2 gives way, not the plate"
+    },
+    {
+      "slug": "hastelloy-b-3",
+      "name": "Hastelloy B-3",
+      "launch": false,
+      "family": "superalloy",
+      "uns": "N10675",
+      "wnr": "2.4600",
+      "en": "NiMo29Cr",
+      "summary": "A modernised B-family alloy with markedly better thermal stability than B-2, resisting the intermetallic precipitation that limits the older grade.",
+      "service": [
+        "Hydrochloric acid and reducing service where B-2 fabrication risk is unacceptable",
+        "Far more tolerant of welding and thermal cycling than B-2",
+        "Still not for oxidising conditions"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B333"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B622"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B335"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "—",
+          "max": "bal"
+        },
+        {
+          "el": "Mo",
+          "min": "27.0",
+          "max": "32.0"
+        },
+        {
+          "el": "Cr",
+          "min": "1.0",
+          "max": "3.0"
+        },
+        {
+          "el": "Fe",
+          "min": "1.0",
+          "max": "3.0"
+        },
+        {
+          "el": "Co",
+          "min": "—",
+          "max": "3.0"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.01"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "760 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "350 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "40 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Solution annealed"
+        }
+      ],
+      "verify": {
+        "risk": "B-3 and B-2 both quote as \"Hastelloy B\", which is all it takes for the two to be interchanged. They are not equivalent: B-3's chromium and iron windows are what give it thermal stability, and B-2 supplied against a B-3 specification will crack where B-3 would not.",
+        "regime": [
+          "PMI distinguishing the Cr 1.0–3.0 % and Fe 1.0–3.0 % windows from B-2",
+          "Carbon verified against the 0.01 % maximum",
+          "Written confirmation of the UNS number before the PO"
+        ]
+      },
+      "tell": "B-2 and B-3 both quote as \"Hastelloy B\" and are not equivalent"
+    },
+    {
+      "slug": "hastelloy-x",
+      "name": "Hastelloy X",
+      "launch": false,
+      "family": "superalloy",
+      "uns": "N06002",
+      "wnr": "2.4665",
+      "en": "NiCr22Fe18Mo",
+      "summary": "A nickel-chromium-iron-molybdenum alloy combining oxidation resistance with high-temperature strength and exceptional fabricability.",
+      "service": [
+        "Gas turbine combustion components, ducting and burner cans",
+        "Oxidation resistance to roughly 1200 °C",
+        "Good strength retention under sustained high temperature"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM B435"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B622"
+        },
+        {
+          "form": "Bar & rod",
+          "spec": "ASTM B572"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "—",
+          "max": "bal"
+        },
+        {
+          "el": "Cr",
+          "min": "20.5",
+          "max": "23.0"
+        },
+        {
+          "el": "Fe",
+          "min": "17.0",
+          "max": "20.0"
+        },
+        {
+          "el": "Mo",
+          "min": "8.0",
+          "max": "10.0"
+        },
+        {
+          "el": "Co",
+          "min": "0.50",
+          "max": "2.50"
+        },
+        {
+          "el": "W",
+          "min": "0.20",
+          "max": "1.00"
+        },
+        {
+          "el": "C",
+          "min": "0.05",
+          "max": "0.15"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "655 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "240 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "35 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Solution annealed"
+        }
+      ],
+      "verify": {
+        "risk": "Carbon on Hastelloy X sits in a band rather than under a ceiling, because the alloy needs it for high-temperature strength. A heat below 0.05 % will not perform at temperature even though a chemistry check against a maximum would pass it.",
+        "regime": [
+          "Carbon verified against the 0.05–0.15 % band, not a maximum",
+          "PMI for Cr, Mo and Fe against B435",
+          "Solution anneal records demanded"
+        ]
+      },
+      "tell": "Carbon sits in a band, so a chemistry check against a maximum passes it"
+    },
+    {
+      "slug": "904l",
+      "name": "904L",
+      "launch": false,
+      "family": "stainless",
+      "uns": "N08904",
+      "wnr": "1.4539",
+      "en": "X1NiCrMoCu25-20-5",
+      "summary": "A high-alloy austenitic stainless with copper added for sulphuric acid resistance, sitting between standard stainless and the nickel alloys in both performance and price.",
+      "service": [
+        "Sulphuric and phosphoric acid service",
+        "Good resistance to chloride pitting and stress-corrosion cracking",
+        "Low carbon gives good as-welded performance"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM A240 / B625"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM B673 / B677"
+        },
+        {
+          "form": "Bar",
+          "spec": "ASTM B649"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Ni",
+          "min": "23.0",
+          "max": "28.0"
+        },
+        {
+          "el": "Cr",
+          "min": "19.0",
+          "max": "23.0"
+        },
+        {
+          "el": "Mo",
+          "min": "4.0",
+          "max": "5.0"
+        },
+        {
+          "el": "Cu",
+          "min": "1.0",
+          "max": "2.0"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "2.0"
+        },
+        {
+          "el": "N",
+          "min": "—",
+          "max": "0.10"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.020"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "bal"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "490 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "220 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "35 %"
+        },
+        {
+          "prop": "Condition",
+          "value": "Solution annealed"
+        }
+      ],
+      "verify": {
+        "risk": "904L is the natural substitute to offer against an Incoloy 825 order, and nickel is most of what it costs, so nickel is where the dilution pressure sits. Copper below the 1.0 % floor removes the sulphuric acid resistance that is the reason to choose it.",
+        "regime": [
+          "PMI reading nickel against the 23.0–28.0 % window",
+          "Copper verified against the 1.0–2.0 % window",
+          "Carbon verified against the 0.020 % maximum",
+          "Confirmation the order is 904L and not a substituted 825 requirement"
+        ]
+      },
+      "tell": "Diluted on nickel, because nickel is most of what it costs"
+    },
+    {
+      "slug": "duplex-2205",
+      "name": "Duplex 2205",
+      "launch": false,
+      "family": "stainless",
+      "uns": "S32205",
+      "wnr": "1.4462",
+      "en": "X2CrNiMoN22-5-3",
+      "summary": "The workhorse duplex stainless: roughly twice the yield strength of 316L with far better chloride stress-corrosion cracking resistance, at a lower nickel cost.",
+      "service": [
+        "Process piping, pressure vessels and tanks in chloride service",
+        "Marine, desalination, oil and gas gathering systems",
+        "PREN typically 34 or above"
+      ],
+      "standards": [
+        {
+          "form": "Plate, sheet & strip",
+          "spec": "ASTM A240"
+        },
+        {
+          "form": "Pipe & tube",
+          "spec": "ASTM A790 / A928"
+        },
+        {
+          "form": "Forgings & fittings",
+          "spec": "ASTM A182 / A815"
+        },
+        {
+          "form": "Bar",
+          "spec": "ASTM A276 / A479"
+        }
+      ],
+      "composition": [
+        {
+          "el": "Cr",
+          "min": "22.0",
+          "max": "23.0"
+        },
+        {
+          "el": "Ni",
+          "min": "4.5",
+          "max": "6.5"
+        },
+        {
+          "el": "Mo",
+          "min": "3.0",
+          "max": "3.5"
+        },
+        {
+          "el": "N",
+          "min": "0.14",
+          "max": "0.20"
+        },
+        {
+          "el": "Mn",
+          "min": "—",
+          "max": "2.0"
+        },
+        {
+          "el": "C",
+          "min": "—",
+          "max": "0.030"
+        },
+        {
+          "el": "S",
+          "min": "—",
+          "max": "0.020"
+        },
+        {
+          "el": "Fe",
+          "min": "—",
+          "max": "bal"
+        }
+      ],
+      "mechanical": [
+        {
+          "prop": "Tensile strength, min",
+          "value": "655 MPa"
+        },
+        {
+          "prop": "Yield strength (0.2%), min",
+          "value": "450 MPa"
+        },
+        {
+          "prop": "Elongation, min",
+          "value": "25 %"
+        },
+        {
+          "prop": "Ferrite content",
+          "value": "Typically 35–55 %"
+        }
+      ],
+      "verify": {
+        "risk": "The older S31803 designation has wider composition windows than S32205 and is still supplied against 2205 orders. As with all duplex, the real risk is structural: a bad anneal leaves sigma phase and a ferrite balance out of range while the chemistry certificate reads perfectly.",
+        "regime": [
+          "Confirmation of S32205 rather than the wider S31803 windows",
+          "Ferrite content measured on the delivered material",
+          "PREN calculated from measured values",
+          "ASTM A923 testing for intermetallic phase where specified"
+        ]
+      },
+      "tell": "The wider S31803 windows still ship against 2205 orders"
+    }
+  ]
+}

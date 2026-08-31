@@ -1,0 +1,275 @@
+/* ==========================================================================
+   Grade pages and the materials index.
+   Same docket world as site.css — square corners, hairline rules, mono data.
+   ========================================================================== */
+
+/* The stock the rest of the site is printed on. Applied here so grade pages
+   sit on the same material rather than on a flat field. */
+.stock{
+  background-color:var(--sheet);
+  background-image:url("../assets/paper.svg");
+  background-repeat:repeat;
+  background-size:240px 240px;
+}
+
+/* ============================ Grade masthead ========================== */
+.grade__head{
+  background-color:var(--sheet);
+  background-image:url("../assets/paper.svg");
+  background-repeat:repeat;
+  background-size:240px 240px;
+  border-bottom:1px solid var(--rule);
+  padding:clamp(2rem,5vw,4rem) 0 clamp(2rem,4vw,3rem);
+}
+.crumb{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-3); margin:0 0 1.5rem;
+}
+.crumb a{ color:var(--ink-3); }
+.crumb a:hover{ color:var(--ink); }
+.crumb span{ opacity:.5; margin:0 .35rem; }
+
+.grade__head h1{
+  font-size:clamp(2.4rem,6vw,4.5rem); font-stretch:118%;
+  letter-spacing:-0.04em; margin-bottom:1.5rem;
+}
+
+.desig{
+  display:flex; flex-wrap:wrap; gap:0; margin:0 0 1.75rem;
+  border-top:1px solid var(--ink); border-bottom:1px solid var(--rule-soft);
+}
+.desig > div{ padding:.7rem 1.5rem .7rem 0; margin-right:1.5rem; border-right:1px solid var(--rule-soft); }
+.desig > div:last-child{ border-right:0; }
+.desig dt{
+  font-family:var(--mono); font-size:.5625rem; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-3);
+}
+.desig dd{ margin:.2rem 0 0; font-family:var(--mono); font-size:1rem; font-weight:600; }
+
+.grade__summary{
+  font-size:clamp(1.0625rem,1.5vw,1.3125rem);
+  line-height:1.5; color:var(--ink-2); max-width:62ch; margin:0;
+}
+
+/* ============================== Spec block ============================
+   The specs sit on the desk as a sheet, so the page reads as paper on a
+   surface rather than as one continuous field. */
+.grade__specs{
+  background:var(--ground);
+  padding:clamp(2rem,4vw,3.5rem) 0 clamp(2.5rem,5vw,4rem);
+}
+.grade__cols{
+  display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  gap:clamp(2rem,5vw,4.5rem); align-items:start;
+  background-color:var(--sheet);
+  background-image:url("../assets/paper.svg");
+  background-repeat:repeat;
+  background-size:240px 240px;
+  border:1px solid var(--rule);
+  box-shadow:0 14px 30px -18px rgba(21,24,27,.38);
+  padding:clamp(1.5rem,3vw,2.5rem);
+}
+@media (max-width:840px){ .grade__cols{ grid-template-columns:1fr; } }
+
+.spec h2{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--blue); font-weight:500;
+  font-stretch:100%; letter-spacing:.14em;
+  padding-bottom:.7rem; margin-bottom:.25rem;
+  border-bottom:1px solid var(--ink);
+}
+.spec__second{ margin-top:2.5rem; }
+.spec__note{ margin-top:.9rem; font-size:.75rem; color:var(--ink-3); }
+
+/* static assay: no animation states, three columns */
+.assay--static{ margin-top:0; }
+.assay--static th, .assay--static td{ padding:.5rem .4rem; }
+.assay--static tbody th{ text-align:left; color:var(--ink); }
+.assay--static td{ color:var(--ink-2); }
+
+.props{ margin:0; }
+.props > div{
+  display:flex; justify-content:space-between; align-items:baseline; gap:1rem;
+  padding:.6rem .1rem; border-bottom:1px solid var(--rule-soft);
+}
+.props dt{ font-size:.875rem; color:var(--ink-2); }
+.props dd{ margin:0; font-family:var(--mono); font-size:.875rem; font-weight:600; text-align:right; }
+
+.forms{ width:100%; border-collapse:collapse; }
+.forms th, .forms td{
+  text-align:left; padding:.6rem .5rem .6rem 0;
+  border-bottom:1px solid var(--rule-soft); font-size:.875rem;
+}
+.forms th{ font-weight:500; color:var(--ink-2); }
+.forms td{ font-family:var(--mono); font-size:.8125rem; white-space:nowrap; text-align:right; }
+
+/* ============================== Service =============================== */
+.grade__service{
+  background-color:var(--sheet);
+  background-image:url("../assets/paper.svg");
+  background-repeat:repeat;
+  background-size:240px 240px;
+  border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+  padding:clamp(2.5rem,5vw,4rem) 0;
+}
+.grade__service h2{ font-size:clamp(1.5rem,3vw,2.25rem); margin-bottom:1.5rem; }
+.service{ list-style:none; margin:0; padding:0; border-top:1px solid var(--rule); max-width:78ch; }
+.service li{
+  padding:.9rem 0 .9rem 1.75rem; border-bottom:1px solid var(--rule-soft);
+  position:relative; color:var(--ink-2);
+}
+.service li::before{
+  content:""; position:absolute; left:0; top:1.5em;
+  width:.7rem; height:1px; background:var(--blue);
+}
+
+/* ===================== The verify block — the money block ============= */
+.verify{
+  background:var(--night); color:var(--night-ink);
+  padding:clamp(3rem,6vw,5.5rem) 0;
+}
+.verify__cols{
+  display:grid; grid-template-columns:1.05fr .95fr;
+  gap:clamp(2rem,5vw,4.5rem); align-items:start;
+}
+@media (max-width:840px){ .verify__cols{ grid-template-columns:1fr; } }
+
+.verify__risk h2{
+  font-size:clamp(1.6rem,3.4vw,2.6rem); font-stretch:115%;
+  margin-bottom:1.1rem; color:#fff;
+}
+.verify__risk p{ color:var(--night-ink-2); font-size:clamp(1rem,1.2vw,1.125rem); max-width:52ch; }
+
+.verify__regime h3{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--night-ink-2); font-weight:500;
+  padding-bottom:.75rem; margin:0 0 .25rem;
+  border-bottom:1px solid var(--night-rule);
+}
+/* Unnumbered: these are checks, not a sequence, and on several grades the
+   last-listed one happens first. */
+.regime{ list-style:none; margin:0 0 1.5rem; padding:0; }
+.regime li{
+  padding:.85rem 0 .85rem 1.6rem; border-bottom:1px solid var(--night-rule);
+  position:relative; font-size:.9375rem;
+}
+.regime li::before{
+  content:""; position:absolute; left:0; top:1.45em;
+  width:.7rem; height:1px; background:var(--night-ink-2);
+}
+.verify__foot{
+  font-size:.875rem; color:var(--night-ink-2); margin:0; max-width:48ch;
+}
+
+/* ================================ CTA ================================= */
+.grade__cta{ background:var(--ground); padding:clamp(2.5rem,5vw,4.5rem) 0; }
+.grade__cta h2{ font-size:clamp(1.6rem,3.4vw,2.6rem); margin-bottom:1rem; }
+.grade__cta p{ color:var(--ink-2); max-width:56ch; margin-bottom:1.75rem; }
+
+/* =========================== Materials index ========================== */
+.idx__head{
+  background-color:var(--sheet);
+  background-image:url("../assets/paper.svg");
+  background-repeat:repeat;
+  background-size:240px 240px;
+  border-bottom:1px solid var(--rule);
+  padding:clamp(2.5rem,5vw,4.5rem) 0 clamp(2rem,4vw,3rem);
+}
+.idx__head h1{ font-size:clamp(2.6rem,6.4vw,5rem); font-stretch:118%; letter-spacing:-0.04em; }
+.idx{
+  background-color:var(--sheet);
+  background-image:url("../assets/paper.svg");
+  background-repeat:repeat;
+  background-size:240px 240px;
+  padding:0 0 clamp(3rem,6vw,5rem);
+}
+.idx__count{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-3);
+  margin:0 0 0 auto; align-self:center;
+}
+
+.chips{ display:flex; flex-wrap:wrap; gap:.5rem; padding:clamp(1.5rem,3vw,2.25rem) 0; }
+.chip{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.12em; text-transform:uppercase;
+  background:transparent; color:var(--ink-2);
+  border:1px solid var(--rule); padding:.5rem .9rem; cursor:pointer;
+}
+.chip:hover{ border-color:var(--ink); color:var(--ink); }
+.chip.is-on{ background:var(--ink); border-color:var(--ink); color:var(--sheet); }
+
+.idx__table tbody th a{ text-decoration:none; border-bottom:1px solid var(--rule); }
+.idx__table tbody th a:hover{ border-bottom-color:var(--ink); }
+.idx__table .mono{ font-family:var(--mono); font-size:.8125rem; color:var(--ink-2); white-space:nowrap; }
+.idx__table .idx__fam{ font-size:.8125rem; color:var(--ink-3); white-space:nowrap; }
+.idx__table .idx__risk{ color:var(--ink-2); min-width:26ch; }
+.idx__empty{ padding:2rem 0; color:var(--ink-3); }
+
+@media (max-width:820px){
+  .idx__table .idx__fam{ display:inline-block; margin-right:1rem; }
+}
+
+/* ============================== Figures ==============================
+   Data drawn from grades.json, never decoration. Same hairline grammar
+   as the tables they sit beside. */
+.fig{ margin:2.25rem 0 0; }
+.fig__cap{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--blue);
+  padding-bottom:.7rem; margin-bottom:1rem; border-bottom:1px solid var(--ink);
+}
+.fig__note{
+  margin-top:.9rem; font-size:.75rem; line-height:1.55; color:var(--ink-3); max-width:64ch;
+}
+
+/* ---- Stacked nominal composition ---- */
+.compbar{
+  display:block; width:100%; height:14px;
+  border:1px solid var(--rule);
+}
+.keys{
+  list-style:none; display:flex; flex-wrap:wrap; gap:.35rem 1.1rem;
+  margin:.9rem 0 0; padding:0;
+}
+.keys li{ display:flex; align-items:center; gap:.4rem; font-size:.8125rem; }
+.key{ width:.6rem; height:.6rem; display:inline-block; flex:none; }
+.keys b{ font-weight:600; }
+.key__v{ font-family:var(--mono); font-size:.75rem; color:var(--ink-3); }
+
+/* ======================== Product form drawings ======================
+   Line objects in the table's own stroke weight. Drawn, never photographed. */
+.formicon{
+  width:2.1rem; height:1.6rem; display:block;
+  color:var(--ink-3);
+  stroke-linecap:round; stroke-linejoin:round;
+  vector-effect:non-scaling-stroke;
+}
+.forms .forms__cell{ width:2.6rem; padding-right:.6rem; vertical-align:middle; }
+.forms tbody tr:hover .formicon{ color:var(--blue); }
+
+/* The set, shown once on the materials index. */
+.formstrip{ padding:clamp(1.5rem,3vw,2.25rem) 0 0; }
+.formstrip__label{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--blue);
+  padding-bottom:.7rem; margin:0 0 1.1rem; border-bottom:1px solid var(--ink);
+}
+.formstrip__list{
+  list-style:none; margin:0; padding:0;
+  display:grid; grid-template-columns:repeat(6,1fr); gap:1rem;
+}
+.formstrip__list li{
+  display:flex; flex-direction:column; gap:.6rem;
+  padding-bottom:.9rem; border-bottom:1px solid var(--rule-soft);
+}
+.formstrip__list span{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--ink-2);
+}
+.formicon--lg{ width:3.4rem; height:2.6rem; color:var(--ink-2); }
+@media (max-width:760px){
+  .formstrip__list{ grid-template-columns:repeat(3,1fr); gap:1.25rem 1rem; }
+}
+@media (max-width:420px){
+  .formstrip__list{ grid-template-columns:repeat(2,1fr); }
+}

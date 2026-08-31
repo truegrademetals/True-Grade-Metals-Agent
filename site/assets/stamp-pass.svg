@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 108" width="240" height="108"
+     role="img" aria-label="Rubber stamp reading Pass, verified">
+  <defs>
+    <!-- Bites the edges: ink never lands on a clean line. -->
+    <filter id="bite" x="-15%" y="-15%" width="130%" height="130%"
+            filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse">
+      <feTurbulence type="fractalNoise" baseFrequency="0.34" numOctaves="4" seed="7"
+                    result="grain"/>
+      <feDisplacementMap in="SourceGraphic" in2="grain" scale="3.4"
+                         xChannelSelector="R" yChannelSelector="G" result="bitten"/>
+      <!-- Uneven density: a second, coarser field eats holes in the ink. -->
+      <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="3" seed="19"
+                    result="mottle"/>
+      <feColorMatrix in="mottle" type="matrix" result="mottleA"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0.9 0 0 0 -0.06"/>
+      <feComposite in="bitten" in2="mottleA" operator="out"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#bite)" fill="none" stroke="#1c6b3a">
+    <rect x="6" y="6" width="228" height="96" stroke-width="4"/>
+    <rect x="14" y="14" width="212" height="80" stroke-width="1.5"/>
+  </g>
+
+  <g filter="url(#bite)" fill="#1c6b3a"
+     font-family="Archivo, 'Helvetica Neue', Arial, sans-serif">
+    <text x="120" y="62" text-anchor="middle" font-size="40" font-weight="800"
+          letter-spacing="5" font-stretch="expanded">PASS</text>
+    <text x="120" y="83" text-anchor="middle" font-size="10" font-weight="600"
+          letter-spacing="6" font-family="'Azeret Mono', monospace">VERIFIED</text>
+  </g>
+</svg>

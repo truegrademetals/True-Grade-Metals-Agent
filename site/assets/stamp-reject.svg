@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 108" width="300" height="108"
+     role="img" aria-label="Rubber stamp reading Rejected, not shipped">
+  <defs>
+    <!-- Same bite as the pass stamp: a different seed, the same worn die. -->
+    <filter id="biteR" x="-15%" y="-15%" width="130%" height="130%"
+            filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse">
+      <feTurbulence type="fractalNoise" baseFrequency="0.31" numOctaves="4" seed="23"
+                    result="grain"/>
+      <feDisplacementMap in="SourceGraphic" in2="grain" scale="3.8"
+                         xChannelSelector="R" yChannelSelector="G" result="bitten"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.075" numOctaves="3" seed="41"
+                    result="mottle"/>
+      <feColorMatrix in="mottle" type="matrix" result="mottleA"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                1.05 0 0 0 -0.05"/>
+      <feComposite in="bitten" in2="mottleA" operator="out"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#biteR)" fill="none" stroke="#a8431a">
+    <rect x="6" y="6" width="288" height="96" stroke-width="4"/>
+    <rect x="14" y="14" width="272" height="80" stroke-width="1.5"/>
+  </g>
+
+  <g filter="url(#biteR)" fill="#a8431a"
+     font-family="Archivo, 'Helvetica Neue', Arial, sans-serif">
+    <text x="150" y="60" text-anchor="middle" font-size="34" font-weight="800"
+          letter-spacing="3" font-stretch="expanded">REJECTED</text>
+    <text x="150" y="83" text-anchor="middle" font-size="10" font-weight="600"
+          letter-spacing="4" font-family="'Azeret Mono', monospace">NOT SHIPPED</text>
+  </g>
+</svg>
