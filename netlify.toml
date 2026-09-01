@@ -1,0 +1,27 @@
+# The site lives in site/, not at the repo root. Without this, Netlify publishes
+# the repository root — which holds no index.html — and every URL 404s.
+#
+# The build step regenerates the 19 grade pages and the materials index from
+# data/grades.json on every deploy, so the published pages can never drift from
+# the data. _build.js resolves its own paths from __dirname, so running it from
+# the repo root is safe.
+
+[build]
+  publish = "site"
+  command = "node site/_build.js"
+
+# Grade data and markup are regenerated per deploy; the authored assets are not.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
