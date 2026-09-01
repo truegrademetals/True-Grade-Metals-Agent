@@ -16,14 +16,6 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
-# Stated explicitly: the local dev server ships no MIME type for .avif, which
-# leaves the browser with bytes it will not render as an image.
-[[headers]]
-  for = "/assets/*.avif"
-  [headers.values]
-    Content-Type = "image/avif"
-    Cache-Control = "public, max-age=604800"
-
 [[headers]]
   for = "/css/*"
   [headers.values]

@@ -725,8 +725,11 @@ a{ color:inherit; }
   border:1px solid var(--rule);
   object-fit:cover;
 }
-.imgslot--band img{ aspect-ratio:3 / 1; }
-.imgslot--strip img{ aspect-ratio:7 / 2; }
+/* Sources are 1280x714 (1.79:1). A 3:1 band would crop 40% of the height and
+   take the top off the pallet bundle, so both settle at 12:5 — enough to read
+   as a band, shallow enough to keep the subject whole. */
+.imgslot--band img,
+.imgslot--strip img{ aspect-ratio:12 / 5; }
 @media (max-width:640px){
-  .imgslot--band img, .imgslot--strip img{ aspect-ratio:2 / 1; }
+  .imgslot--band img, .imgslot--strip img{ aspect-ratio:16 / 9; }
 }
