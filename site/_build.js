@@ -163,18 +163,18 @@ const foot = () => {
     <div>
       <p class="foot__name">True Grade Metals</p>
       <p class="foot__sub">Verified alloy sourcing for Australian industry.<br>
-        A division of Bilt&nbsp;&amp;&nbsp;Co, Rockhampton QLD.</p>
+        A division of Bilt&nbsp;&amp;&nbsp;Co Pty Ltd, Rockhampton QLD.</p>
     </div>
     <dl class="foot__contact">
-      <div><dt>Enquiries</dt><dd class="ph">email to supply</dd></div>
-      <div><dt>Phone</dt><dd class="ph">number to supply</dd></div>
-      <div><dt>ABN</dt><dd class="ph">to supply</dd></div>
+      <div><dt>Enquiries</dt><dd><a href="mailto:hello@truegrademetals.com">hello@truegrademetals.com</a></dd></div>
+      <div><dt>Phone</dt><dd><a href="tel:+61799999999">07 9999 9999</a></dd></div>
+      <div><dt>ACN</dt><dd class="ph">to supply</dd></div>
     </dl>
     <p class="foot__legal">
       Composition and mechanical values on this site are published standards information, reproduced
       for reference only. They are not a specification for any application, and the governing standard
       in its current revision always takes precedence.
-      © <span id="yr">2026</span> Bilt &amp; Co.
+      © <span id="yr">2026</span> Bilt &amp; Co Pty Ltd.
     </p>
   </div>
 </footer>

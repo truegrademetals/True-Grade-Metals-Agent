@@ -114,11 +114,12 @@ the material of the product and of the site.
 
 ## Evidence on Hand
 
-**None yet. The site is built with clearly marked structured placeholders.**
-Future work must not fabricate any of the following:
+**Partial.** Entity and contact details are now confirmed; everything else below
+is still outstanding and remains a clearly marked placeholder on the site.
+Future work must not fabricate any of it:
 
-- No registered entity details, ABN or address confirmed yet
-- No real contact details or phone number yet
+- Entity confirmed: Bilt & Co Pty Ltd. ACN still outstanding.
+- Contact confirmed: hello@truegrademetals.com, 07 9999 9999.
 - No genuine inspection report, PMI readout, or mill test certificate yet
 - No named inspection house relationships yet
 - No clients, testimonials, case studies, shipment counts or supplier counts
