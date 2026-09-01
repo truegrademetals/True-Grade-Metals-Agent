@@ -719,5 +719,14 @@ a{ color:inherit; }
   font-family:var(--mono); font-size:.5625rem; letter-spacing:.12em;
   text-transform:uppercase; color:var(--flag); margin-top:.6rem;
 }
-/* When a real image replaces the box it inherits the same footprint. */
-.imgslot img{ display:block; width:100%; height:auto; border:1px solid var(--rule); }
+/* A real image inherits the slot's footprint and crops to it. */
+.imgslot img{
+  display:block; width:100%; height:auto;
+  border:1px solid var(--rule);
+  object-fit:cover;
+}
+.imgslot--band img{ aspect-ratio:3 / 1; }
+.imgslot--strip img{ aspect-ratio:7 / 2; }
+@media (max-width:640px){
+  .imgslot--band img, .imgslot--strip img{ aspect-ratio:2 / 1; }
+}
