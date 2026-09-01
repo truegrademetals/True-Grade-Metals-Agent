@@ -118,8 +118,15 @@ function formStrip() {
 /* Root-relative throughout. A clean URL such as /materials carries no trailing
    slash, so a relative href resolves against the site root and 404s; absolute
    paths are immune to that. */
-const head = (title, desc) => {
+/* Canonical host. www 301s to the apex, so the apex is the canonical form, and
+   Netlify serves extensionless URLs — both canonicals and the sitemap use that
+   shape so the two URLs every page answers on collapse to one. */
+const SITE = 'https://truegrademetals.com';
+const OG_IMAGE = SITE + '/assets/material-pipe-ends.jpg';
+
+const head = (title, desc, canonicalPath, jsonld) => {
   const up = '/';
+  const canonical = SITE + (canonicalPath || '/');
   return `<!DOCTYPE html>
 <html lang="en-AU">
 <head>
@@ -127,6 +134,20 @@ const head = (title, desc) => {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
+<link rel="canonical" href="${esc(canonical)}">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="True Grade Metals">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc)}">
+<meta property="og:url" content="${esc(canonical)}">
+<meta property="og:image" content="${OG_IMAGE}">
+<meta property="og:image:alt" content="Cut ends of seamless alloy pipe, bore and wall thickness visible">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(desc)}">
+<meta name="twitter:image" content="${OG_IMAGE}">
+${jsonld ? '<script type="application/ld+json">' + jsonld + '</script>\n' : ''}
 <link rel="icon" href="${up}favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -212,7 +233,16 @@ function gradePage(g) {
   const service = g.service.map((s) => `<li>${esc(s)}</li>`).join('\n        ');
   const regime = g.verify.regime.map((r) => `<li>${esc(r)}</li>`).join('\n          ');
 
-  return head(title, desc) + `
+  const crumbs = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Materials', item: SITE + '/materials' },
+      { '@type': 'ListItem', position: 2, name: g.name, item: SITE + '/materials/' + g.slug },
+    ],
+  });
+
+  return head(title, desc, '/materials/' + g.slug, crumbs) + `
 
 <article class="grade">
 
@@ -328,7 +358,19 @@ function indexPage(grades) {
     'Materials — nickel alloys, superalloys and grade-critical stainless | True Grade Metals',
     'Nineteen grades of nickel alloy, superalloy and grade-critical stainless, with the '
     + 'substitution risk and test regime we specify for each.',
-    1
+    '/materials',
+    JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Nickel alloys, superalloys and grade-critical stainless',
+      numberOfItems: grades.length,
+      itemListElement: grades.map((g, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: g.name,
+        url: SITE + '/materials/' + g.slug,
+      })),
+    })
   ) + `
 
 <section class="idx__head">
@@ -439,7 +481,23 @@ function build() {
     }
   }
 
+  /* Sitemap. Without one, the grade pages are only discoverable by crawling
+     links, which is fragile for a catalogue this size. Extensionless URLs to
+     match the canonicals. */
+  const urls = ['/', '/materials'].concat(grades.map((g) => '/materials/' + g.slug));
+  const today = new Date().toISOString().slice(0, 10);
+  const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + urls.map((u) => '  <url>\n'
+      + '    <loc>' + SITE + u + '</loc>\n'
+      + '    <lastmod>' + today + '</lastmod>\n'
+      + '    <priority>' + (u === '/' ? '1.0' : u === '/materials' ? '0.8' : '0.6') + '</priority>\n'
+      + '  </url>').join('\n')
+    + '\n</urlset>\n';
+  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap, 'utf8');
+
   console.log('built ' + n + ' grade pages + materials index -> materials/');
+  console.log('wrote sitemap.xml (' + urls.length + ' urls)');
   console.log('wrote _redirects (' + (grades.length + 1) + ' rules)');
   const missing = grades.filter((g) => !g.verify || !g.verify.risk || !g.verify.regime.length);
   if (missing.length) {
