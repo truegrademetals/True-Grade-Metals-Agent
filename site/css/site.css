@@ -689,9 +689,9 @@ a{ color:inherit; }
 }
 
 /* ============================ Image slots ============================
-   Deliberately unmistakable. These name the file and the shot they are
-   waiting for, so replacing them is a drop-in rather than a guess.
-   Swap the inner .imgslot__box for an <img> when the licensed file lands. */
+   An unfilled slot is deliberately unmistakable: it names the file and the
+   shot it is waiting for, so replacing it is a drop-in rather than a guess.
+   Swap the inner .imgslot__box for the real image element once it lands. */
 .imgslot{ margin:0 0 clamp(2rem,4vw,3rem); }
 .imgslot__box{
   display:flex; flex-direction:column; justify-content:center; align-items:center;
