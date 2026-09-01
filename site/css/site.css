@@ -649,3 +649,75 @@ a{ color:inherit; }
 }
 .disp dd{ margin:.2rem 0 0; font-size:.9375rem; font-weight:700; }
 .disp .is-fail{ color:var(--flag); }
+
+/* ======================== Product form drawings ======================
+   Line objects in the table's own stroke weight. Drawn, never photographed. */
+.formicon{
+  width:2.1rem; height:1.6rem; display:block;
+  color:var(--ink-3);
+  stroke-linecap:round; stroke-linejoin:round;
+  vector-effect:non-scaling-stroke;
+}
+.forms .forms__cell{ width:2.6rem; padding-right:.6rem; vertical-align:middle; }
+.forms tbody tr:hover .formicon{ color:var(--blue); }
+
+/* The set, shown once on the materials index. */
+.formstrip{ padding:clamp(1.5rem,3vw,2.25rem) 0 0; }
+.formstrip__label{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--blue);
+  padding-bottom:.7rem; margin:0 0 1.1rem; border-bottom:1px solid var(--ink);
+}
+.formstrip__list{
+  list-style:none; margin:0; padding:0;
+  display:grid; grid-template-columns:repeat(6,1fr); gap:1rem;
+}
+.formstrip__list li{
+  display:flex; flex-direction:column; gap:.6rem;
+  padding-bottom:.9rem; border-bottom:1px solid var(--rule-soft);
+}
+.formstrip__list span{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--ink-2);
+}
+.formicon--lg{ width:3.4rem; height:2.6rem; color:var(--ink-2); }
+@media (max-width:760px){
+  .formstrip__list{ grid-template-columns:repeat(3,1fr); gap:1.25rem 1rem; }
+}
+@media (max-width:420px){
+  .formstrip__list{ grid-template-columns:repeat(2,1fr); }
+}
+
+/* ============================ Image slots ============================
+   Deliberately unmistakable. These name the file and the shot they are
+   waiting for, so replacing them is a drop-in rather than a guess.
+   Swap the inner .imgslot__box for an <img> when the licensed file lands. */
+.imgslot{ margin:0 0 clamp(2rem,4vw,3rem); }
+.imgslot__box{
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+  gap:.5rem; text-align:center; padding:1.5rem;
+  border:1px dashed var(--flag);
+  background:
+    repeating-linear-gradient(-45deg, transparent 0 7px, rgba(168,67,26,.07) 7px 14px),
+    var(--sheet);
+}
+.imgslot--band .imgslot__box{ aspect-ratio:3 / 1; }
+.imgslot--strip .imgslot__box{ aspect-ratio:7 / 2; }
+@media (max-width:640px){
+  .imgslot--band .imgslot__box,
+  .imgslot--strip .imgslot__box{ aspect-ratio:2 / 1; }
+}
+.imgslot__name{
+  font-family:var(--mono); font-size:.75rem; letter-spacing:.04em;
+  color:var(--flag); margin:0; font-weight:600;
+}
+.imgslot__spec{
+  font-family:var(--mono); font-size:.625rem; letter-spacing:.06em;
+  color:var(--ink-3); margin:0; max-width:52ch; line-height:1.6;
+}
+.imgslot figcaption{
+  font-family:var(--mono); font-size:.5625rem; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--flag); margin-top:.6rem;
+}
+/* When a real image replaces the box it inherits the same footprint. */
+.imgslot img{ display:block; width:100%; height:auto; border:1px solid var(--rule); }

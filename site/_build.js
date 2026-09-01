@@ -101,6 +101,18 @@ function compositionFigure(g) {
       </figure>`;
 }
 
+/* The form drawings, used on the materials index and injected into the
+   hand-maintained homepage, so both come from lib/form-icons.js and cannot
+   drift apart. */
+function formStrip() {
+  return `    <div class="formstrip">
+      <p class="formstrip__label">Supplied in</p>
+      <ul class="formstrip__list">${Object.keys(forms.LABELS).map((k) => `
+        <li>${forms.icon(k, 'formicon formicon--lg')}<span>${esc(forms.LABELS[k])}</span></li>`).join('')}
+      </ul>
+    </div>`;
+}
+
 /* ------------------------------------------------------------------ chrome */
 
 /* Root-relative throughout. A clean URL such as /materials carries no trailing
@@ -332,12 +344,7 @@ function indexPage(grades) {
 
 <section class="idx">
   <div class="wrap">
-    <div class="formstrip">
-      <p class="formstrip__label">Supplied in</p>
-      <ul class="formstrip__list">${Object.keys(forms.LABELS).map((k) => `
-        <li>${forms.icon(k, 'formicon formicon--lg')}<span>${esc(forms.LABELS[k])}</span></li>`).join('')}
-      </ul>
-    </div>
+${formStrip()}
 
     <div class="chips" role="group" aria-label="Filter grades by family">${filters}
       <p class="idx__count" role="status" aria-live="polite">${grades.length} grades</p>
@@ -413,6 +420,24 @@ function build() {
     .concat(['/materials  /materials/index.html  200'])
     .join('\n') + '\n';
   fs.writeFileSync(path.join(ROOT, '_redirects'), redirects, 'utf8');
+
+  /* The homepage is hand-maintained, but its form drawings come from the same
+     module as the grade pages. Injected between markers so the two can never
+     show different shapes. */
+  const homePath = path.join(ROOT, 'index.html');
+  if (fs.existsSync(homePath)) {
+    let home = fs.readFileSync(homePath, 'utf8');
+    const marker = /<!-- FORMS:START -->[\s\S]*?<!-- FORMS:END -->/;
+    if (marker.test(home)) {
+      const next = home.replace(marker, '<!-- FORMS:START -->\n' + formStrip() + '\n    <!-- FORMS:END -->');
+      if (next !== home) {
+        fs.writeFileSync(homePath, next, 'utf8');
+        console.log('injected form drawings into index.html');
+      }
+    } else {
+      console.log('WARNING: index.html has no FORMS markers; homepage strip not updated');
+    }
+  }
 
   console.log('built ' + n + ' grade pages + materials index -> materials/');
   console.log('wrote _redirects (' + (grades.length + 1) + ' rules)');
