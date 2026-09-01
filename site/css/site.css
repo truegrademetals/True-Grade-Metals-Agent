@@ -733,3 +733,115 @@ a{ color:inherit; }
 @media (max-width:640px){
   .imgslot--band img, .imgslot--strip img{ aspect-ratio:16 / 9; }
 }
+
+/* ==================== The commitment : risk reversal ====================
+   Reads as a formal undertaking on the desk — a heavy ink rule across the
+   top of the sheet, the way a signed page is headed. */
+.pledge{ background:var(--ground); padding:clamp(3rem,6vw,5.5rem) 0; }
+.pledge__grid{
+  display:grid; grid-template-columns:1.05fr .95fr;
+  gap:clamp(1.5rem,4vw,3.5rem); align-items:start;
+  background-color:var(--sheet);
+  background-image:url("../assets/paper.svg");
+  background-repeat:repeat; background-size:240px 240px;
+  border:1px solid var(--rule); border-top:3px solid var(--ink);
+  box-shadow:0 14px 30px -18px rgba(21,24,27,.38);
+  padding:clamp(1.75rem,3.5vw,3rem);
+}
+@media (max-width:860px){ .pledge__grid{ grid-template-columns:1fr; } }
+.pledge__head h2{
+  font-size:clamp(1.8rem,3.8vw,2.9rem); font-stretch:115%;
+  letter-spacing:-0.03em; max-width:16ch;
+}
+.pledge__body p{ color:var(--ink-2); max-width:52ch; }
+.pledge__points{
+  list-style:none; margin:1.5rem 0 0; padding:0;
+  border-top:1px solid var(--rule);
+}
+.pledge__points li{
+  padding:.7rem 0 .7rem 1.6rem; border-bottom:1px solid var(--rule-soft);
+  position:relative; font-size:.9375rem; font-weight:600;
+}
+.pledge__points li::before{
+  content:""; position:absolute; left:0; top:1.15em;
+  width:.65rem; height:.35rem;
+  border-left:2px solid var(--blue); border-bottom:2px solid var(--blue);
+  transform:rotate(-45deg);
+}
+
+/* ======================= The offer : the one raised voice ================
+   Placed at the argument's peak, and the only section besides the hero that
+   asks for something. Dark so it reads as the decisive moment. */
+.offer{ background:var(--night); color:var(--night-ink); padding:clamp(3rem,6vw,5.5rem) 0; }
+.offer__grid{
+  display:grid; grid-template-columns:1.1fr .9fr;
+  gap:clamp(2rem,5vw,4.5rem); align-items:start;
+}
+@media (max-width:860px){ .offer__grid{ grid-template-columns:1fr; } }
+.offer__lede h2{
+  font-size:clamp(1.9rem,4vw,3rem); font-stretch:115%; color:#fff;
+  margin-bottom:1.2rem; max-width:16ch;
+}
+.offer__lede p{ color:var(--night-ink-2); max-width:50ch; }
+.offer__note{
+  border-top:1px solid var(--night-rule); padding-top:1rem; margin-top:1.4rem;
+  font-family:var(--mono); font-size:.75rem; letter-spacing:.02em;
+}
+.form--compact{ border-top:0; }
+.form--compact .form__row{ margin-top:0; }
+.offer .form label{ color:var(--night-ink-2); }
+.offer .form input{
+  background:var(--sheet); color:var(--ink);
+  border-color:var(--night-rule); border-bottom-color:var(--night-ink-2);
+}
+.offer .form input:focus{ outline-color:#8fb0ff; }
+.offer .btn{ background:var(--sheet); color:var(--ink); border-color:var(--sheet); }
+.offer .btn:hover{ background:#fff; border-color:#fff; }
+.form__submit--compact{ padding-top:1.25rem; }
+
+/* ============================== Objections ============================== */
+.faq{ background:var(--ground); padding:clamp(3rem,6vw,5.5rem) 0; }
+.faq h2{ font-size:clamp(1.9rem,4vw,3rem); margin-bottom:clamp(1.5rem,3vw,2.5rem); }
+.faq__list{ margin:0; border-top:1px solid var(--ink); }
+.faq__list > div{
+  display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(1rem,3vw,3rem);
+  padding:1.4rem 0; border-bottom:1px solid var(--rule);
+}
+@media (max-width:760px){
+  .faq__list > div{ grid-template-columns:1fr; gap:.5rem; }
+}
+.faq__list dt{
+  font-weight:700; font-stretch:108%; letter-spacing:-0.015em;
+  font-size:1.0625rem; max-width:30ch;
+}
+.faq__list dd{ margin:0; color:var(--ink-2); max-width:62ch; }
+
+/* ===================== Step two of the enquiry ========================== */
+.form__more{ border-bottom:1px solid var(--rule); }
+.form__more > summary{
+  cursor:pointer; list-style:none;
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:.25rem 1rem;
+  padding:1.25rem 0 1.25rem 1.9rem;
+  position:relative;
+}
+.form__more > summary::-webkit-details-marker{ display:none; }
+/* Drawn marker, opening into a minus when expanded. */
+.form__more > summary::before,
+.form__more > summary::after{
+  content:""; position:absolute; left:.15rem; background:var(--blue);
+}
+.form__more > summary::before{ top:1.85rem; width:.8rem; height:2px; }
+.form__more > summary::after{
+  top:1.45rem; left:.5rem; width:2px; height:.8rem;
+  transition:transform .18s ease;
+}
+.form__more[open] > summary::after{ transform:scaleY(0); }
+.form__more-title{
+  font-weight:700; font-size:1.0625rem; font-stretch:108%; letter-spacing:-0.015em;
+}
+.form__more-why{
+  font-family:var(--mono); font-size:.6875rem; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--ink-3);
+}
+.form__more > summary:hover .form__more-title{ color:var(--blue); }
+.form__more fieldset:last-of-type{ border-bottom:0; }

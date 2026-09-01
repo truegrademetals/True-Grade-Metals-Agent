@@ -143,6 +143,27 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </section>
 
+<!-- ============ THE COMMITMENT : risk reversal ============ -->
+<section class="pledge" id="pledge">
+  <div class="wrap pledge__grid">
+    <div class="pledge__head">
+      <h2>If it isn’t the grade you specified, it doesn’t ship.</h2>
+    </div>
+    <div class="pledge__body">
+      <p>The heat is tested by an accredited independent laboratory before it leaves China, and the
+         report reaches you unedited. If it does not meet what was specified, the container does not
+         load — and where something gets past us, the material is replaced.</p>
+      <p>That is the whole reason to put someone between you and the mill. Anyone can find you a
+         supplier. The question is who carries it when the metal is wrong.</p>
+      <ul class="pledge__points">
+        <li>Verified before it ships, not after it lands</li>
+        <li>Failed reports reach you as well as passing ones</li>
+        <li>An Australian company, under Australian law</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- ============ THE VERIFICATION CHAIN : DARK PUNCTUATION ============ -->
 <section class="chain" id="chain">
   <div class="wrap">
@@ -296,6 +317,34 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </section>
 
+<!-- ============ THE OFFER : low-friction conversion ============ -->
+<section class="offer" id="report">
+  <div class="wrap offer__grid">
+    <div class="offer__lede">
+      <h2>See one before you commit to anything.</h2>
+      <p>We will send you a full specimen verification report — the same document you would receive
+         against a real heat, showing what each gate produces and exactly what gets measured.</p>
+      <p class="offer__note">Three fields. No obligation, and no sales call unless you ask for one.</p>
+    </div>
+
+    <form class="form form--compact" name="report-request" method="POST"
+          data-netlify="true" netlify-honeypot="company-fax">
+      <input type="hidden" name="form-name" value="report-request">
+      <p class="vh"><label>Leave blank <input name="company-fax"></label></p>
+      <div class="form__row">
+        <label>Name<span class="req" aria-hidden="true">*</span><input name="name" required></label>
+        <label>Company<span class="req" aria-hidden="true">*</span><input name="company" required></label>
+      </div>
+      <label class="form__full">Email<span class="req" aria-hidden="true">*</span>
+        <input name="email" type="email" required>
+      </label>
+      <div class="form__submit form__submit--compact">
+        <button class="btn" type="submit">Send me the report</button>
+      </div>
+    </form>
+  </div>
+</section>
+
 <!-- ============ MATERIALS ============ -->
 <section class="materials" id="materials">
   <div class="wrap">
@@ -418,6 +467,49 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </section>
 
+<!-- ============ OBJECTIONS ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2>The questions we actually get asked</h2>
+    <dl class="faq__list">
+      <div>
+        <dt>How much does verification add to the lead time?</dt>
+        <dd>Days, not weeks. Testing is arranged while the material is still at the mill, so it runs
+            alongside production rather than after it. The only gate that costs real time is the one
+            that catches a problem, and that is time you would otherwise spend discovering it in
+            Australia.</dd>
+      </div>
+      <div>
+        <dt>Is there a minimum order?</dt>
+        <dd>No fixed minimum. Below a certain volume the freight economics stop working in your
+            favour, and we will say so rather than take the order — for a small quantity an
+            Australian distributor is sometimes genuinely the better answer.</dd>
+      </div>
+      <div>
+        <dt>What happens if the material fails the test?</dt>
+        <dd>It does not ship. You receive the report showing why, and we go back to the mill or to
+            another approved mill. You are never asked to accept off-spec material at a discount.</dd>
+      </div>
+      <div>
+        <dt>Can we nominate the inspection house?</dt>
+        <dd>Yes. If you already work with an accredited laboratory, we will use them. It costs us
+            nothing and it removes any question about whose interests the report serves.</dd>
+      </div>
+      <div>
+        <dt>Do you hold stock in Australia?</dt>
+        <dd>No. Everything is sourced to order against your specification, which is what allows the
+            grade, the heat and the test regime to be fixed in writing before anything is made.</dd>
+      </div>
+      <div>
+        <dt>What are your payment terms?</dt>
+        <dd>Set out before you commit, and they depend on the engagement. Under Managed Sourcing you
+            contract and pay the mill directly. Under Delivered you are buying from an Australian
+            company on AUD terms.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
 <!-- ============ WHO STANDS BEHIND IT ============ -->
 <section class="entity" id="entity">
   <div class="wrap entity__grid">
@@ -453,9 +545,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <header class="sec__head">
       <h2>Gate one starts here</h2>
       <p class="lede">
-        This form asks more than a contact form does, on purpose. Specification lock is the gate that
-        prevents the argument later, and the answers below are what we need to price the job properly
-        rather than guess at it. If you don’t have all of it, send what you have.
+        Four fields to start. Add the technical detail underneath if you have it and we can come back
+        with a firm number rather than a range — specification lock is the gate that prevents the
+        argument later, and it starts with what you tell us here.
         Fields marked <span class="req" aria-hidden="true">*</span> are required.
       </p>
     </header>
@@ -472,12 +564,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <p class="vh"><label>Leave blank <input name="company-website"></label></p>
 
       <fieldset>
-        <legend>Material</legend>
+        <legend>What you need</legend>
         <div class="form__row">
           <label>Grade or alloy<span class="req" aria-hidden="true">*</span><input name="grade" required placeholder="e.g. Hastelloy C-276"></label>
-          <label>Standard<input name="standard" placeholder="e.g. ASTM B575"></label>
-        </div>
-        <div class="form__row">
           <label>Product form
             <select name="form">
               <option value="">Select…</option>
@@ -485,38 +574,54 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               <option>Sheet, plate &amp; coil</option><option>Wire</option>
             </select>
           </label>
-          <label>Dimensions &amp; tolerance<input name="dimensions" placeholder="e.g. 168.3 OD × 7.11 WT"></label>
           <label>Quantity<input name="quantity" placeholder="e.g. 6 t"></label>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Service conditions</legend>
-        <p class="fieldset__why">We ask because the service determines which tests actually matter.</p>
-        <div class="form__row">
-          <label>Medium<input name="medium" placeholder="e.g. wet chlorine"></label>
-          <label>Temperature<input name="temperature" placeholder="e.g. 120 °C"></label>
-          <label>Pressure<input name="pressure" placeholder="e.g. 1.6 MPa"></label>
-        </div>
-        <label class="form__full">Required certification &amp; test regime
-          <input name="certification" placeholder="e.g. EN 10204 3.1, PMI, PT, hydro">
-        </label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Delivery &amp; contact</legend>
-        <div class="form__row">
-          <label>Delivery port or yard<input name="destination" placeholder="e.g. Gladstone"></label>
-          <label>Required on site by<input name="required-by" type="date"></label>
         </div>
         <div class="form__row">
           <label>Name<span class="req" aria-hidden="true">*</span><input name="name" required></label>
           <label>Company<span class="req" aria-hidden="true">*</span><input name="company" required></label>
           <label>Email<span class="req" aria-hidden="true">*</span><input name="email" type="email" required></label>
-          <label>Phone<input name="phone" type="tel"></label>
         </div>
-        <label class="form__full">Anything else<textarea name="notes" rows="3"></textarea></label>
       </fieldset>
+
+      <!-- Step two is native <details>: no JS needed, keyboard accessible, and every
+           field stays in the DOM so the form still posts complete. -->
+      <details class="form__more">
+        <summary>
+          <span class="form__more-title">Add the technical detail</span>
+          <span class="form__more-why">Optional — but it gets you a firm number instead of a range</span>
+        </summary>
+
+        <fieldset>
+          <legend>Specification</legend>
+          <div class="form__row">
+            <label>Standard<input name="standard" placeholder="e.g. ASTM B575"></label>
+            <label>Dimensions &amp; tolerance<input name="dimensions" placeholder="e.g. 168.3 OD × 7.11 WT"></label>
+          </div>
+          <label class="form__full">Required certification &amp; test regime
+            <input name="certification" placeholder="e.g. EN 10204 3.1, PMI, PT, hydro">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Service conditions</legend>
+          <p class="fieldset__why">We ask because the service decides which tests actually matter.</p>
+          <div class="form__row">
+            <label>Medium<input name="medium" placeholder="e.g. wet chlorine"></label>
+            <label>Temperature<input name="temperature" placeholder="e.g. 120 °C"></label>
+            <label>Pressure<input name="pressure" placeholder="e.g. 1.6 MPa"></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Delivery</legend>
+          <div class="form__row">
+            <label>Delivery port or yard<input name="destination" placeholder="e.g. Gladstone"></label>
+            <label>Required on site by<input name="required-by" type="date"></label>
+            <label>Phone<input name="phone" type="tel"></label>
+          </div>
+          <label class="form__full">Anything else<textarea name="notes" rows="3"></textarea></label>
+        </fieldset>
+      </details>
 
       <div class="form__submit">
         <button class="btn" type="submit">File enquiry</button>
