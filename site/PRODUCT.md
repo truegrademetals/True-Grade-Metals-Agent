@@ -118,7 +118,7 @@ the material of the product and of the site.
 is still outstanding and remains a clearly marked placeholder on the site.
 Future work must not fabricate any of it:
 
-- Entity confirmed: Bilt & Co Pty Ltd. ACN still outstanding.
+- Entity confirmed: Bilt & Co Pty Ltd, ACN 700 798 509.
 - Contact confirmed: hello@truegrademetals.com, 07 9999 9999.
 - No genuine inspection report, PMI readout, or mill test certificate yet
 - No named inspection house relationships yet
